@@ -9,9 +9,23 @@ los commits viejos se leen con la versión que declaran.
 | campo | qué es |
 |---|---|
 | `schema` | versión de este documento que aplica al archivo |
-| `generated_at` | cuándo se armó el snapshot (hora local del runner) |
+| `generated_at` | cuándo se armó el snapshot, **con offset de huso** (`2026-09-13T00:07:42-04:00`). Con offset para que el "hace cuánto" se calcule igual desde cualquier lado del mundo |
 | `sesion` | fecha de la sesión de mercado a la que corresponden los datos |
 | `slot` | qué corrida lo generó: `0830` `0935` `1200` `1430` `1530` `1605`. `1605` es el cierre; el resto es media rueda |
+| `frescura` | qué tan viejos son los DATOS con los que se armó (ver abajo) |
+
+### `frescura`
+| campo | qué es |
+|---|---|
+| `artefacto_mas_viejo_min` | edad, en minutos, del dato fuente más viejo que entró a este snapshot |
+| `dentro_de_ventana` | `true` si todo viene de la misma corrida (≤ 20 min). `null` si no se pudo determinar |
+
+**Para qué está.** `generated_at` dice cuándo se ARMÓ el archivo, no qué tan
+viejos son los números de adentro. Si una corrida falla a mitad, el snapshot se
+escribe igual, con marca de tiempo de ahora y datos de ayer: fresco por fuera,
+rancio por dentro. Con `dentro_de_ventana: false` el sitio puede decir *"lectura
+del cierre del 11-09, con datos de hace 32 h"* en vez de mostrarla como si
+acabara de salir.
 
 ### `veredicto`
 | campo | qué es |
