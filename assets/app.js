@@ -420,23 +420,47 @@ function regimen(r) {
   return h + '</div></div>';
 }
 
-function pro() {
-  return '<div class="section-title">Acceso completo</div>' +
-    '<div class="pro"><h3>Lo que sigue detrás de esta pantalla</h3>' +
-    '<p>Esta página es la lectura del día. El acceso completo abre el detalle ' +
-    'que hay debajo de ella:</p><ul>' +
-    '<li>GEX por strike, con el perfil completo y el punto donde se da vuelta</li>' +
-    '<li>Flujo institucional: premium neto, delta imbalance y bloques</li>' +
-    '<li>Volatilidad: VEX, CHEX, skew 25Δ y la prima de riesgo</li>' +
-    '<li>Histórico de score y niveles, sesión por sesión</li>' +
-    '<li>Alertas cuando el régimen cambia, sin tener que mirar</li>' +
-    '</ul><div class="soon">En preparación</div></div>';
+function acceso() {
+  return '<div class="section-title">Acceso</div>' +
+    '<div class="pro"><h3>Tres piezas, una sola lectura</h3>' +
+    '<p>Esta página es la capa de arriba. Debajo hay dos cosas más que ya ' +
+    'están corriendo todos los días.</p>' +
+    '<div class="tri">' +
+      '<div class="tri-item"><div class="tri-h">Esta página</div>' +
+        '<div class="tri-t">Gratis y sin registro. Veredicto, régimen y ' +
+        'niveles, seis veces por sesión.</div>' +
+        '<div class="tri-x">Abierta</div></div>' +
+      '<div class="tri-item"><div class="tri-h">El indicador</div>' +
+        '<div class="tri-t">Los mismos niveles dibujados en tu gráfico de ' +
+        'TradingView: zero gamma, walls, vol trigger.</div>' +
+        '<div class="tri-x">Por invitación</div></div>' +
+      '<div class="tri-item"><div class="tri-h">La comunidad</div>' +
+        '<div class="tri-t">Los dos briefs completos del día, las alertas ' +
+        'cuando el régimen cambia, y un lugar para preguntar.</div>' +
+        '<div class="tri-x">Discord</div></div>' +
+    '</div>' +
+    '<div class="prep"><strong>En preparación — el webapp:</strong> GEX por ' +
+    'strike con el perfil completo · flujo institucional (premium neto, delta ' +
+    'imbalance, bloques) · volatilidad (VEX, CHEX, skew 25Δ, prima de riesgo) · ' +
+    'histórico de score sesión por sesión · alertas de cambio de régimen.</div>' +
+    '</div>';
+}
+
+function credibilidad() {
+  return '<div class="nota-cred"><div class="nota-h">Sin edición posterior</div>' +
+    '<p>Cada sesión se publica sola y queda como quedó. Cuando un dato llega ' +
+    'incompleto, la página lo dice en lugar de rellenarlo con un cero. Eso ' +
+    'también es parte de la lectura.</p></div>';
+}
+
+function ctaDiscord() {
+  return '<a class="cta" href="https://discord.gg/jPavDXs9VE" target="_blank" ' +
+    'rel="noopener">Entrar al Discord' +
+    '<span>los briefs completos y las alertas</span></a>';
 }
 
 function pie() {
   return '<footer><div class="links">' +
-    '<a href="https://discord.gg/jPavDXs9VE" target="_blank" rel="noopener">' +
-      'Comunidad en Discord</a>' +
     '<a href="https://www.tradingview.com/script/UEx2xB7a-GEX-Levels-Pro-Dealer-Gamma-Exp/" ' +
       'target="_blank" rel="noopener">Indicador de TradingView</a>' +
     '</div><div class="disclaimer">Los niveles son referencias, no objetivos. ' +
@@ -460,7 +484,7 @@ function render(d) {
     tablaTickers(n.tickers) +
     (b.AM || b.PM ? '<div class="section-title">Los briefs del día</div>' : '') +
     bloqueBrief('AM', b.AM) + bloqueBrief('PM', b.PM) +
-    pro() + pie();
+    acceso() + credibilidad() + ctaDiscord() + pie();
 }
 
 /* Nunca una pantalla en blanco. */
