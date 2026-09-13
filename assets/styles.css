@@ -391,6 +391,16 @@ footer { margin-top: 28px; border-top: 1px solid var(--border); padding-top: 16p
 .links a:hover { border-color: var(--accent); color: #c7d2fe; }
 .disclaimer { margin-top: 14px; font-size: 11px; color: var(--text-mute); line-height: 1.5; }
 
+/* ── fondo ──────────────────────────────────────────────────────────────── */
+
+/* z-index 0, NO -1: el background opaco del body taparía el canvas si fuera
+   negativo. El contenido va en 1, encima. */
+#bg {
+  position: fixed; inset: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+}
+body > main, body > #app { position: relative; z-index: 1; }
+
 /* ── estados de carga y error ───────────────────────────────────────────── */
 
 /* Nunca una pantalla en blanco: si el JSON no carga, se dice. */
