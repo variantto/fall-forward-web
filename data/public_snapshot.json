@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "generated_at": "2026-09-13T00:07:42-04:00",
+ "generated_at": "2026-09-13T00:36:21-04:00",
  "sesion": "2026-09-11",
  "slot": "1605",
  "frescura": {
-  "artefacto_mas_viejo_min": 1919.8,
+  "artefacto_mas_viejo_min": 1948.4,
   "dentro_de_ventana": false
  },
  "veredicto": {
