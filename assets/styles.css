@@ -160,6 +160,28 @@ body {
   margin-bottom: 4px;
   opacity: 0.95;
 }
+.flag b { color: #fff; }
+
+/* El desglose dentro de la caja de control de calidad. Mismo gesto que los
+   briefs (<details> colapsado, sin el triangulito nativo), pero en chico: acá
+   es un detalle opcional, no el contenido principal de la tarjeta. */
+details.det { margin-top: 9px; }
+details.det > summary {
+  list-style: none; cursor: pointer; display: inline-block;
+  font-size: 11px; letter-spacing: .06em; color: var(--zg);
+  border: 1px solid rgba(245,158,11,.3); border-radius: 5px; padding: 3px 9px;
+}
+details.det > summary::-webkit-details-marker { display: none; }
+details.det > summary:hover { background: rgba(245,158,11,.08); }
+details.det:not([open]) .det-toggle::after { content: "Ver detalle ↓"; }
+details.det[open]      .det-toggle::after { content: "Ocultar detalle ↑"; }
+.det-body {
+  margin: 9px 0 0; padding-left: 16px;
+  font-size: 12px; line-height: 1.5; color: #fcd9a0;
+}
+.det-body li { margin-bottom: 6px; }
+.det-body li:last-child { margin-bottom: 0; }
+
 .flag-datos { background: rgba(245,158,11,.10); border-color: rgba(245,158,11,.4); color: #fde68a; }
 .flag-datos .flag-label { color: var(--zg); }
 .flag-veto  { background: rgba(220,38,38,.10); border-color: rgba(220,38,38,.4);  color: #fecaca; }
