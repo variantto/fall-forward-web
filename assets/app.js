@@ -282,6 +282,61 @@ function cabecera(d) {
   return h;
 }
 
+/** "GEX, DEX, VEX, CHEX, zero gamma ni ATM IV" — enumeración en castellano. */
+function enumerar(xs) {
+  if (xs.length === 1) return esc(xs[0]);
+  return xs.slice(0, -1).map(esc).join(', ') + ' ni ' + esc(xs[xs.length - 1]);
+}
+
+/* UNA caja, no cuatro, y CON ATRIBUCIÓN.
+   Las cuatro líneas del brief, cada una con su propia bandera ámbar y su
+   propio "SIN DATO", convertían un día excepcional en una pantalla que se lee
+   como un sitio roto: quien llega por primera vez no ve cuatro huecos
+   declarados, ve cuatro errores. Y el contenido de las cuatro es el MISMO
+   hecho — la cadena de opciones de SPX llegó vacía— visto desde cuatro
+   ángulos. Van juntas: el hecho arriba, el desglose detrás de un <details>
+   como los briefs, para el que quiera el detalle.
+
+   Y el texto DICE DE QUIÉN ES EL PROBLEMA. "NO SE MIDIÓ" a secas se lee como
+   "el script de ellos falló"; lo que pasó es que el dato de origen vino
+   incompleto y el sistema lo detectó en vez de publicar ceros como si fueran
+   mediciones. Eso no es una falla: es el control de calidad funcionando, y es
+   exactamente lo que nos separa de un dashboard que publica un 0 y se calla.
+   Sin detalle técnico igual — ni proveedor con nombre, ni archivos, ni el
+   0.0000 —, pero sí la atribución, que es lo que le cambia la lectura a quien
+   mira. (Distinto de la regla del brief "qué falta, no por qué falla": allá el
+   porqué es ruido de implementación; acá es la diferencia entre "no medimos" y
+   "el dato de origen vino mal".)
+
+   El VETO NO entra acá: es otra cosa —un chequeo que no se pudo evaluar, no
+   un dato que no llegó— y se funde mal con esto. Caja propia, roja, como está.
+
+   `magnitudes_sin_dato` viene resuelta del backend; si el JSON es viejo y no
+   la trae, la frase cae a una forma genérica en vez de romperse. */
+function bloqueSinDato(lineas, magnitudes) {
+  if (!lineas || !lineas.length) return '';
+
+  var que = magnitudes && magnitudes.length
+    ? 'no publica ' + enumerar(magnitudes)
+    : 'no publica parte del bloque de régimen';
+
+  var h = '<div class="flag flag-datos">' +
+          '<span class="flag-label">CONTROL DE CALIDAD</span>' +
+          '<b>Esta corrida ' + que + '.</b> ' +
+          'El dato de origen vino incompleto: la cadena de opciones de SPX ' +
+          'llegó vacía desde el proveedor. El sistema lo detectó y por eso no ' +
+          'publica esos números, en vez de mostrar ceros como si fueran ' +
+          'mediciones. El resto de la lectura sigue siendo válido; el score ' +
+          'del día queda con un reparo, y está en el detalle.';
+
+  h += '<details class="det"><summary><span class="det-toggle"></span></summary>' +
+       '<ul class="det-body">';
+  lineas.forEach(function (l) {
+    h += '<li>' + esc(l.replace(/^SIN DATO\s*[—-]\s*/, '')) + '</li>';
+  });
+  return h + '</ul></details></div>';
+}
+
 function veredicto(v) {
   if (!v) {
     return '<div class="section-title">Veredicto</div>' +
@@ -291,10 +346,7 @@ function veredicto(v) {
 
   /* ARRIBA del score, con peso de bandera. El orden es el del brief: qué NO se
      midió, después el estado del veto, después los desacuerdos. */
-  (v.estado_datos || []).forEach(function (l) {
-    h += '<div class="flag flag-datos"><span class="flag-label">SIN DATO</span>' +
-         esc(l.replace(/^SIN DATO\s*[—-]\s*/, '')) + '</div>';
-  });
+  h += bloqueSinDato(v.estado_datos, v.magnitudes_sin_dato);
   (v.estado_veto || []).forEach(function (l) {
     h += '<div class="flag flag-veto"><span class="flag-label">VETO</span>' + esc(l) + '</div>';
   });
@@ -383,8 +435,10 @@ function pro() {
 
 function pie() {
   return '<footer><div class="links">' +
-    '<a href="#" data-link="discord">Comunidad en Discord</a>' +
-    '<a href="#" data-link="tradingview">Indicador de TradingView</a>' +
+    '<a href="https://discord.gg/jPavDXs9VE" target="_blank" rel="noopener">' +
+      'Comunidad en Discord</a>' +
+    '<a href="https://www.tradingview.com/script/UEx2xB7a-GEX-Levels-Pro-Dealer-Gamma-Exp/" ' +
+      'target="_blank" rel="noopener">Indicador de TradingView</a>' +
     '</div><div class="disclaimer">Los niveles son referencias, no objetivos. ' +
     'Nada de lo publicado acá es una recomendación de inversión.</div></footer>';
 }
