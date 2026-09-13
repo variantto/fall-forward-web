@@ -508,5 +508,101 @@ fetch(URL_DATOS, { cache: 'no-store' })
     if (!r.ok) throw new Error('HTTP ' + r.status);
     return r.json();
   })
-  .then(render)
+  .then(function (d) {
+    // El fondo se monta DESPUÉS de que render() pintó: es decoración y no
+    // puede meterse antes de la primera pintura de la lectura.
+    render(d);
+    // El try/catch NO es decorativo: sin él, cualquier excepción del canvas
+    // caería en el .catch() de abajo y errorDeCarga() BORRARÍA la lectura ya
+    // pintada para poner "no se pudieron cargar los datos" — un fondo roto
+    // mintiendo sobre el estado de los datos. El fondo puede fallar; la
+    // lectura se queda.
+    try { fondoVelas(); } catch (e) { /* decoración, no bloquea nada */ }
+  })
   .catch(function (e) { errorDeCarga(e && e.message ? e.message : String(e)); });
+
+/* ── fondo ───────────────────────────────────────────────────────────────── */
+
+function fondoVelas() {
+  var mq = window.matchMedia('(min-width: 900px)');
+  var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!mq.matches) return;
+
+  var cv = document.createElement('canvas');
+  cv.id = 'bg';
+  cv.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(cv, document.body.firstChild);
+  var ctx = cv.getContext('2d');
+  var W = 0, H = 0, t = 0, raf = null;
+
+  // Random walk generado una vez. Es textura, no dato: por eso no lleva
+  // eje, ni precios, ni etiquetas. Si algun dia se dibuja la serie real
+  // de spot publicada, este array es lo unico que se reemplaza.
+  var velas = [];
+  var p = 100, s = 1;
+  for (var i = 0; i < 240; i++) {
+    if (Math.random() < 0.04) s = -s;
+    var o = p;
+    p += (Math.random() - 0.5) * 3.2 + s * 0.35;
+    var c = p;
+    velas.push({ o: o, c: c,
+                 h: Math.max(o, c) + Math.random() * 1.6,
+                 l: Math.min(o, c) - Math.random() * 1.6 });
+  }
+
+  function medir() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    cv.width = Math.round(W * dpr);
+    cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    var ancho = 11, sep = 4, paso = ancho + sep;
+    var desp = (t * 0.3) % paso;
+    var vis = Math.ceil(W / paso) + 2;
+    var i0 = Math.floor((t * 0.3) / paso) % velas.length;
+
+    var min = Infinity, max = -Infinity, k, v;
+    for (k = 0; k < vis; k++) {
+      v = velas[(i0 + k) % velas.length];
+      if (v.l < min) min = v.l;
+      if (v.h > max) max = v.h;
+    }
+    var pad = (max - min) * 0.18 || 1;
+    min -= pad; max += pad;
+
+    ctx.globalAlpha = 0.18;
+    for (k = 0; k < vis; k++) {
+      v = velas[(i0 + k) % velas.length];
+      var x = k * paso - desp;
+      var sube = v.c >= v.o;
+      ctx.strokeStyle = sube ? '#16a34a' : '#dc2626';
+      ctx.fillStyle   = sube ? '#16a34a' : '#dc2626';
+      ctx.lineWidth = 1.5;
+      var y = function (val) { return H - ((val - min) / (max - min)) * H; };
+      ctx.beginPath();
+      ctx.moveTo(x + ancho / 2, y(v.h));
+      ctx.lineTo(x + ancho / 2, y(v.l));
+      ctx.stroke();
+      var y0 = y(Math.max(v.o, v.c)), y1 = y(Math.min(v.o, v.c));
+      ctx.fillRect(x, y0, ancho, Math.max(1.5, y1 - y0));
+    }
+    ctx.globalAlpha = 1;
+
+    if (!quieto && !document.hidden) { t += 1; raf = requestAnimationFrame(frame); }
+    else raf = null;
+  }
+
+  function arrancar() { if (raf === null) frame(); }
+
+  window.addEventListener('resize', function () { medir(); arrancar(); });
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) arrancar();
+  });
+
+  medir();
+  frame();
+}
