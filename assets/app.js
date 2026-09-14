@@ -139,12 +139,31 @@ function bloqueInstrumento(nombre, d) {
   if (d.basis && d.basis.fuera_de_rango) {
     h += '<div class="instr-flag">' + esc(d.basis.fuera_de_rango) + '</div>';
   }
-  if (d.origen_sin_dato) {
+  /* El hueco de niveles se DECLARA, nunca se deja como sección vacía: una
+     lista que no está se lee como "no pasó nada", que es la lectura falsa.
+     El backend ya decidió qué sacar; acá sólo se dibuja el aviso. */
+  if (d.formato === 'sin_dato') {
+    var sd = d.niveles_sin_dato || {};
+    h += '<div class="instr-flag"><span class="flag-label">SIN DATO</span>' +
+         esc(sd.texto || ('No hay niveles publicables de ' + nombre +
+                          ' en esta corrida.'));
+    if ((sd.descartados || []).length) {
+      h += '<div class="descartados">No se publican: ' +
+           sd.descartados.map(esc).join(' · ') + '</div>';
+    }
+    h += '</div>';
+    if (d.spot_estimado != null) {
+      h += '<div class="lvl-group">LO ÚNICO MEDIDO</div>' +
+           filaNivel('Spot estimado ' + d.spot_estimado);
+    }
+  } else if (d.origen_sin_dato) {
     h += '<div class="instr-flag">La cadena de opciones de la que se derivan ' +
          'estos niveles vino vacía: tomalos con esa reserva.</div>';
   }
 
-  if (d.formato === 'tres_bloques') {
+  if (d.formato === 'sin_dato') {
+    /* nada más que dibujar: los tres moldes de niveles no aplican */
+  } else if (d.formato === 'tres_bloques') {
     if ((d.resistencias || []).length) {
       h += '<div class="lvl-group">RESISTENCIAS</div>';
       d.resistencias.forEach(function (l) { h += filaNivel(l); });
@@ -237,6 +256,17 @@ function primerParrafo(texto) {
     if (l.length > 30) return l.length > 180 ? l.slice(0, 177) + '…' : l;
   }
   return 'Brief completo.';
+}
+
+/* Un brief RETENIDO se dice, no desaparece. El backend lo retiene cuando su
+   texto se contradice con la caja de control de calidad; si acá no saliera
+   nada, la sección se encogería en silencio y el lector no sabría que hubo un
+   brief ni por qué no está. */
+function briefRetenido(slot, nota) {
+  if (!nota) return '';
+  return '<div class="brief-retenido">' +
+           '<span class="brief-slot">BRIEF ' + esc(slot) + '</span>' +
+           '<p>' + esc(nota) + '</p></div>';
 }
 
 function bloqueBrief(slot, texto) {
@@ -482,8 +512,10 @@ function render(d) {
     '<div class="card">' + bloqueInstrumento('ES', f.ES) +
                            bloqueInstrumento('NQ', f.NQ) + '</div>' +
     tablaTickers(n.tickers) +
-    (b.AM || b.PM ? '<div class="section-title">Los briefs del día</div>' : '') +
-    bloqueBrief('AM', b.AM) + bloqueBrief('PM', b.PM) +
+    (b.AM || b.PM || b.AM_retenido || b.PM_retenido
+       ? '<div class="section-title">Los briefs del día</div>' : '') +
+    bloqueBrief('AM', b.AM) + briefRetenido('AM', b.AM_retenido) +
+    bloqueBrief('PM', b.PM) + briefRetenido('PM', b.PM_retenido) +
     acceso() + credibilidad() + ctaDiscord() + pie();
 }
 
