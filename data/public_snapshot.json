@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "generated_at": "2026-09-13T20:56:27-04:00",
+ "generated_at": "2026-09-13T21:27:48-04:00",
  "sesion": "2026-09-11",
  "slot": "1605",
  "frescura": {
-  "artefacto_mas_viejo_min": 3168.5,
+  "artefacto_mas_viejo_min": 3199.9,
   "dentro_de_ventana": false
  },
  "veredicto": {
@@ -142,10 +142,9 @@
   }
  },
  "briefs": {
-  "AM": null,
-  "AM_retenido": "El brief AM de esta sesión no se muestra: fue escrito antes del control de calidad de datos y cita GEX como un número, cuando esta corrida no lo midió. Contradice el aviso de arriba, así que se retiene en vez de publicarse. El resto de la lectura no depende de él.",
+  "AM": "**BRIEF AM — 2026-09-11 08:34**\n\n**1. Cobertura**\nWatcher activo del 09-09 16:48 al 09-09 19:39 y del 09-10 18:24 al 09-11 08:00 (1 reinicio), con un hueco sin cobertura de hasta 22,8 h entre el 09-09 19:39 y el 09-10 18:24; ventana pedida desde el brief PM del 09-10 16:08. Sin calendario macro.\n\n**2. Qué pasó desde el brief anterior**\nBarra de mayor confluencia: **09-11 05:00**, 3 símbolos (ES, VIX, ZN) cruzando 3 temas — bonos, volatilidad e índices en la misma barra: movimiento coordinado, no rotación de un solo tema.\n\n- Los bonos dominaron la ventana: 37 de 57 eventos, con ZN al frente (16), ZT (15) y ZB (6), desde las 18:05 hasta las 07:45 — actividad sostenida toda la madrugada, no un pico aislado.\n- ES apareció en 16 eventos y en cuatro de las cinco barras de confluencia (00:10, 04:20, 05:00, 06:00): el índice se movió acompañado de tasas, no solo.\n- Dos avisos, los dos en ES y los dos overnight: 04:20 en 7.635,00 y 04:50 en 7.640,75. VIX registró 4 eventos, sin cambios de régimen.\n\n**3. Régimen hoy**\n- **Sin VETO**\n- **DIVERGENCIA CROSS-LAYER:** flujo neto SPX +0,09B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack.\n- Score **45/124 — 🔴 BEARISH BIAS**. Capas: REGIME 2/43, GREEKS 18/30, FLOW 18/41, VOL 7/10.\n- GEX: net GEX **-1,4B**, régimen negativo (dealers amplifican); GEX@spot negativo; momentum en leve baja 1/3 días. Aviso del scorer: neg GEX + VOMEX +$50.585M — dealers amplifican spot Y vol a la vez.\n- Spot **1,4% por debajo** del zero gamma (7.698,96).\n- Basis ES 54,05 (ESZ6) — con warning de RTH. NQ 41,40 (NQZ6), mismo warning.\n\n**4. Niveles del día**\n\n**ES**\nBanderas:\n- ESTRUCTURA RARA: el call wall (7.704,05) está ABAJO del zero gamma (7.753,01).\n- EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes; los niveles van en lista plana por precio descendente.\n\n- EM +1σ 7.806,72\n- Zero Gamma / Vol trigger 7.753,01\n- Call wall 7.704,05\n- Max GEX 7.679,05\n- Put wall 7.579,05\n- EM −1σ 7.484,78\n- (spot estimado 7.645,75)\n\n**NQ**\nBanderas:\n- ESTRUCTURA RARA: el call wall (29.807,71) está ABAJO del zero gamma (29.845,39).\n- EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes; los niveles van en lista plana por precio descendente.\n\n- EM +1σ 30.007,26\n- Zero Gamma / Vol trigger 29.845,39\n- Call wall 29.807,71\n- Max GEX / Put wall 29.186,72\n- EM −1σ 28.671,71\n- (spot estimado 29.339,48)\n\nSon referencias, no objetivos.\n\n**5. Macro**\nSin calendario macro.\n\n- Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle\n- Wealthy investors are pouring billions into this new tax strategy despite risks\n- 25 years after 9/11, the U.S. starts rolling back travel restrictions, from liquids to gate access\n- COMMENTARY: Morning Bid: Take a hike - Reuters\n- Yemen's Houthis reach strategic island at mouth of vital shipping lane - Reuters\n- As Saudi tensions with Iran-backed Houthis escalate, mediator Pakistan faces pressure to choose a side - Reuters\n- EXCLUSIVE: UAE revises AI data center plan after Iranian attacks, sources say - Reuters\n- Treasury yields steady as traders await consumer inflation data amid oil price pressure\n\nOtras métricas: DEX -$13B (dealers cortos de delta, venden en los rebotes); VEX +$26M (leve compresión de vol); CHEX -$12M (venta moderada); delta imbalance +923.215 (delta largo); skew 25Δ 5,0 pts (levemente elevado); ATM IV 16,8%; VRP +8,1 pts.",
   "PM": null,
-  "PM_retenido": "El brief PM de esta sesión no se muestra: fue escrito antes del control de calidad de datos y cita GEX como un número, cuando esta corrida no lo midió. Contradice el aviso de arriba, así que se retiene en vez de publicarse. El resto de la lectura no depende de él."
+  "PM_retenido": "El brief PM de esta sesión no se muestra: fue escrito antes del control de calidad de datos y publica GEX como $0.0B, un cero que en realidad es una cadena de opciones vacía. Contradice el aviso de arriba, así que se retiene en vez de publicarse. El resto de la lectura no depende de él."
  },
  "stale_flags": {
   "flow_stale": false,
