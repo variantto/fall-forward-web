@@ -266,6 +266,9 @@ details.det[open]      .det-toggle::after { content: "Ocultar detalle ↑"; }
   margin-bottom: 8px;
 }
 
+.instr-flag .flag-label { color: var(--zg); }
+.descartados { margin-top: 6px; font-size: 11px; color: var(--text-mute); }
+
 .lvl-group { font-size: 10px; letter-spacing: .14em; color: var(--text-mute); margin: 10px 0 4px; }
 
 .lvl {
@@ -327,6 +330,15 @@ details.brief[open] .brief-peek { display: none; }
 .brief-body ul { margin: 0 0 10px; padding-left: 18px; }
 .brief-body li { margin-bottom: 4px; }
 .brief-body strong { color: #fff; }
+
+/* Brief retenido: mismo lugar que un brief, peso de aviso y no de tarjeta
+   clickeable — no hay nada que abrir. */
+.brief-retenido {
+  border: 1px solid rgba(245,158,11,.35); border-radius: var(--r);
+  background: rgba(245,158,11,.06); padding: 14px; margin-bottom: 12px;
+}
+.brief-retenido .brief-slot { color: var(--zg); border-color: rgba(245,158,11,.4); }
+.brief-retenido p { margin: 8px 0 0; font-size: 13px; color: #fde68a; line-height: 1.55; }
 
 /* ── 6. pro ─────────────────────────────────────────────────────────────── */
 
