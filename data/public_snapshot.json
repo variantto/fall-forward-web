@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "generated_at": "2026-09-17T14:34:00-04:00",
+ "generated_at": "2026-09-17T15:34:02-04:00",
  "sesion": "2026-09-17",
- "slot": "1430",
+ "slot": "1530",
  "frescura": {
   "artefacto_mas_viejo_min": 0.5,
   "dentro_de_ventana": true
@@ -13,7 +13,7 @@
   "label": "❌ NO TRADE",
   "bias": "NEUTRAL",
   "estado_veto": [
-   "VETO 1: Spot 7,638 within 0.10% of Zero Gamma 7,630 — regime unstable"
+   "VETO 1: Spot 7,639 within 0.09% of Zero Gamma 7,633 — regime unstable"
   ],
   "estado_datos": null,
   "magnitudes_sin_dato": null,
@@ -24,9 +24,9 @@
    "valor": -429373459.08679986,
    "signo": "negativo"
   },
-  "spot_spx": 7637.6298828125,
-  "zero_gamma": 7630.213172520893,
-  "distancia_pct": 0.1,
+  "spot_spx": 7639.35009765625,
+  "zero_gamma": 7632.516505596875,
+  "distancia_pct": 0.09,
   "vix": {
    "regimen": "calma",
    "desde": "tensión",
@@ -38,24 +38,24 @@
  "niveles": {
   "futuros": {
    "ES": {
-    "spot_estimado": 7708.14,
-    "pivote_zero_gamma": 7700.72,
-    "em_1sigma": "81.25",
-    "iv": "9.75",
+    "spot_estimado": 7708.33,
+    "pivote_zero_gamma": 7701.5,
+    "em_1sigma": "79.10",
+    "iv": "9.49",
     "expiry": "2026-09-21",
-    "ts": "2026-09-17 14:33",
+    "ts": "2026-09-17 15:33",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 7,789.39",
-     "Call wall 7,770.51"
+     "EM +1σ 7,787.43",
+     "Call wall 7,768.98"
     ],
     "soportes": [
-     "EM −1σ 7,626.89",
-     "Max GEX / Put wall 7,570.51"
+     "EM −1σ 7,629.23",
+     "Max GEX / Put wall 7,568.98"
     ],
     "banderas": null,
     "basis": {
-     "valor": 70.51,
+     "valor": 68.98,
      "contrato": "ESZ6",
      "fuera_de_rango": null,
      "rth_warning": false
@@ -63,24 +63,24 @@
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 29728.44,
-    "pivote_zero_gamma": 29854.19,
-    "em_1sigma": "362.31",
-    "iv": "11.17",
+    "spot_estimado": 29739.88,
+    "pivote_zero_gamma": 29826.58,
+    "em_1sigma": "371.24",
+    "iv": "11.44",
     "expiry": "2026-09-21",
-    "ts": "2026-09-17 14:33",
+    "ts": "2026-09-17 15:33",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 30,090.76",
-     "Call wall 29,881.58"
+     "EM +1σ 30,111.12",
+     "Call wall 29,864.74"
     ],
     "soportes": [
-     "Max GEX / Put wall 29,674.07",
-     "EM −1σ 29,366.13"
+     "Max GEX / Put wall 29,657.34",
+     "EM −1σ 29,368.65"
     ],
     "banderas": null,
     "basis": {
-     "valor": 41.5022,
+     "valor": 41.4788,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false
@@ -90,35 +90,35 @@
   },
   "tickers": {
    "SPX": {
-    "spot": 7637.6298828125,
-    "zero_gamma": 7630.213172520893,
+    "spot": 7639.35009765625,
+    "zero_gamma": 7632.516505596875,
     "call_wall": 7700.0,
     "put_wall": 7500.0,
-    "expected_move_1sigma": 81.25003962224727,
-    "em_superior": 7718.879922434748,
-    "em_inferior": 7556.379843190252,
+    "expected_move_1sigma": 79.10118375846756,
+    "em_superior": 7718.451281414717,
+    "em_inferior": 7560.248913897783,
     "expiry": "2026-09-21",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 762.6599731445312,
-    "zero_gamma": 749.8578259441878,
+    "spot": 762.8099975585938,
+    "zero_gamma": 750.9658169488855,
     "call_wall": 765.0,
     "put_wall": 755.0,
-    "expected_move_1sigma": 5.633521802893243,
-    "em_superior": 768.2934949474245,
-    "em_inferior": 757.026451341638,
+    "expected_move_1sigma": 5.468171196251517,
+    "em_superior": 768.2781687548453,
+    "em_inferior": 757.3418263623422,
     "expiry": "2026-09-21",
     "sin_dato": false
    },
    "QQQ": {
-    "spot": 716.3099975585938,
-    "zero_gamma": 719.3415347032045,
+    "spot": 716.989990234375,
+    "zero_gamma": 719.0764845646353,
     "call_wall": 720.0,
     "put_wall": 715.0,
-    "expected_move_1sigma": 8.730006011179041,
-    "em_superior": 725.0400035697728,
-    "em_inferior": 707.5799915474147,
+    "expected_move_1sigma": 8.949514458986249,
+    "em_superior": 725.9395046933613,
+    "em_inferior": 708.0404757753887,
     "expiry": "2026-09-21",
     "sin_dato": false
    }
