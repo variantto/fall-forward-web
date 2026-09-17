@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-09-16T16:08:49-04:00",
- "sesion": "2026-09-16",
- "slot": "1605",
+ "generated_at": "2026-09-17T08:33:52-04:00",
+ "sesion": "2026-09-17",
+ "slot": "0830",
  "frescura": {
-  "artefacto_mas_viejo_min": 1.1,
+  "artefacto_mas_viejo_min": 1.0,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 31,
+  "score": 33,
   "max": 124,
   "label": "🔴 BEARISH BIAS",
   "bias": "BEARISH",
@@ -21,12 +21,12 @@
  },
  "regimen": {
   "gex": {
-   "valor": -7080527627.851013,
+   "valor": -1386660003.7426999,
    "signo": "negativo"
   },
   "spot_spx": 7551.81005859375,
-  "zero_gamma": 7732.6632153034025,
-  "distancia_pct": -2.39,
+  "zero_gamma": 7646.253646530936,
+  "distancia_pct": -1.25,
   "vix": {
    "regimen": "tensión",
    "desde": "calma",
@@ -38,56 +38,52 @@
  "niveles": {
   "futuros": {
    "ES": {
-    "spot_estimado": 7621.0,
-    "pivote_zero_gamma": 7801.85,
-    "em_1sigma": "133.48",
-    "iv": "16.2",
-    "expiry": "2026-09-18",
-    "ts": "2026-09-16 16:07",
-    "formato": "lista_plana",
-    "niveles_por_precio": [
-     "Zero Gamma / Vol trigger 7,801.85",
-     "Max GEX 7,769.19",
-     "EM +1σ 7,754.48",
-     "Call wall 7,669.19",
-     "Put wall 7,569.19",
-     "EM −1σ 7,487.52",
-     "(spot estimado 7,621.00)"
+    "spot_estimado": 7710.0,
+    "pivote_zero_gamma": 7804.44,
+    "em_1sigma": "129.36",
+    "iv": "15.7",
+    "expiry": "2026-09-21",
+    "ts": "2026-09-17 08:32",
+    "formato": "tres_bloques",
+    "resistencias": [
+     "Call wall 7,858.19",
+     "EM +1σ 7,839.36"
     ],
-    "banderas": [
-     "ESTRUCTURA RARA: el call wall (7,669.19) está ABAJO del zero gamma (7,801.85)",
-     "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
+    "soportes": [
+     "EM −1σ 7,580.64",
+     "Max GEX / Put wall 7,508.19"
     ],
+    "banderas": null,
     "basis": {
-     "valor": 69.19,
+     "valor": 158.19,
      "contrato": "ESZ6",
-     "fuera_de_rango": null,
+     "fuera_de_rango": "basis +158.19 FUERA del rango esperado +20/+150 — los niveles ES convertidos pueden estar desplazados",
      "rth_warning": true
     },
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 29231.78,
-    "pivote_zero_gamma": 29734.94,
-    "em_1sigma": "733.37",
-    "iv": "22.99",
-    "expiry": "2026-09-18",
-    "ts": "2026-09-16 16:07",
+    "spot_estimado": 29688.72,
+    "pivote_zero_gamma": 30326.97,
+    "em_1sigma": "632.77",
+    "iv": "19.54",
+    "expiry": "2026-09-21",
+    "ts": "2026-09-17 08:32",
     "formato": "lista_plana",
     "niveles_por_precio": [
-     "EM +1σ 29,965.15",
-     "Zero Gamma / Vol trigger 29,734.94",
-     "Call wall 29,450.80",
-     "Max GEX / Put wall 29,036.00",
-     "EM −1σ 28,498.42",
-     "(spot estimado 29,231.78)"
+     "Call wall 30,332.45",
+     "Zero Gamma / Vol trigger 30,326.97",
+     "EM +1σ 30,321.49",
+     "Max GEX 30,121.81",
+     "Put wall 29,489.88",
+     "EM −1σ 29,055.96",
+     "(spot estimado 29,688.72)"
     ],
     "banderas": [
-     "ESTRUCTURA RARA: el call wall (29,450.80) está ABAJO del zero gamma (29,734.94)",
      "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
     ],
     "basis": {
-     "valor": 41.48,
+     "valor": 42.1284,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": true
@@ -98,42 +94,42 @@
   "tickers": {
    "SPX": {
     "spot": 7551.81005859375,
-    "zero_gamma": 7732.6632153034025,
-    "call_wall": 7600.0,
-    "put_wall": 7500.0,
-    "expected_move_1sigma": 133.4831447343912,
-    "em_superior": 7685.293203328141,
-    "em_inferior": 7418.326913859359,
-    "expiry": "2026-09-18",
+    "zero_gamma": 7646.253646530936,
+    "call_wall": 7700.0,
+    "put_wall": 7350.0,
+    "expected_move_1sigma": 129.36329458826802,
+    "em_superior": 7681.173353182018,
+    "em_inferior": 7422.446764005482,
+    "expiry": "2026-09-21",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 754.1300048828125,
-    "zero_gamma": 771.2513443006438,
+    "spot": 754.0499877929688,
+    "zero_gamma": 756.499820042611,
     "call_wall": 760.0,
     "put_wall": 750.0,
-    "expected_move_1sigma": 12.046133011656414,
-    "em_superior": 766.1761378944689,
-    "em_inferior": 742.0838718711561,
-    "expiry": "2026-09-18",
+    "expected_move_1sigma": 10.522793278120645,
+    "em_superior": 764.5727810710894,
+    "em_inferior": 743.5271945148481,
+    "expiry": "2026-09-21",
     "sin_dato": false
    },
    "QQQ": {
     "spot": 704.719970703125,
-    "zero_gamma": 716.8500808148476,
-    "call_wall": 710.0,
+    "zero_gamma": 719.8732864016806,
+    "call_wall": 720.0,
     "put_wall": 700.0,
-    "expected_move_1sigma": 17.67729897435002,
-    "em_superior": 722.397269677475,
-    "em_inferior": 687.042671728775,
-    "expiry": "2026-09-18",
+    "expected_move_1sigma": 15.024550759408413,
+    "em_superior": 719.7445214625334,
+    "em_inferior": 689.6954199437166,
+    "expiry": "2026-09-21",
     "sin_dato": false
    }
   }
  },
  "briefs": {
-  "AM": "**Cobertura**\nVentana desde el brief PM del 2026-09-15 16:08 hasta hoy 08:33, con 3 corridas del watcher y 2 reinicios (11:33→16:17, 16:56→17:58, 18:17→08:30); sin huecos entre corridas ni al inicio, último latido hace 3,6 minutos. Sin calendario macro.\n\n**Qué pasó desde el brief anterior**\nEl watcher no registró ninguna barra de confluencia en la ventana: no hay evento multi-símbolo para leer hoy. Los 14 eventos son todos de volumen relativo y quedaron repartidos en dos temas que no se cruzaron en la misma barra.\n\n- Bonos fueron el tema dominante de la noche: 11 eventos entre las 18:00 y la 01:25, con ZN al frente y ZB/ZT acompañando. Actividad concentrada en tasas, sin contagio simultáneo a otros temas.\n- Índices aparecieron aparte y más tarde: 3 eventos, todos ES, entre las 23:15 y las 07:00. Separados en el tiempo de la tanda de bonos, así que es actividad de un solo tema, no un movimiento coordinado.\n- Ningún detector fuera de rvol se activó: no hubo avisados ni cambios de régimen de VIX en la ventana.\n\n**Régimen hoy**\n\n**ESTADO_VETO: Sin VETO**\n\n**DIVERGENCIA CROSS-LAYER:**\n- Gamma regime 0% vs Flow signals 41% — structural positioning and institutional flow disagree (REGIME 0/43, FLOW 17/41).\n- Flujo neto SPX +0.05B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack.\n\n- Score **38/124** — 🔴 BEARISH BIAS.\n- GEX SPX **$-7.2B** — dealers amplify. GEX cayendo 3 de 3 días. GEX@spot negativo.\n- Spot SPX 7.585,73 vs zero gamma 7.734,01: 2,0% POR DEBAJO — régimen negativo.\n- Basis ES 96,52 (ESZ6) — con warning de RTH. Basis NQ 41,78 (NQZ6) — con warning de RTH.\n- Aviso del scorer: Neg GEX + VOMEX +$674090M — dealers amplify both spot AND vol simultaneously.\n\n**Niveles del día**\n\n**ES**\nBanderas:\n- ESTRUCTURA RARA: el call wall (7.696,52) está ABAJO del zero gamma (7.830,53).\n- EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente.\n\n- EM +1σ 7.868,39\n- Zero Gamma / Vol trigger 7.830,53\n- Max GEX 7.796,52\n- Call wall 7.696,52\n- Put wall 7.596,52\n- EM −1σ 7.496,11\n- (spot estimado 7.682,25)\n\n**NQ**\nBanderas:\n- ESTRUCTURA RARA: el call wall (29.660,82) está ABAJO del zero gamma (29.994,61).\n- EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente.\n\n- EM +1σ 30.424,90\n- Zero Gamma / Vol trigger 29.994,61\n- Call wall 29.660,82\n- Max GEX / Put wall 29.243,06\n- EM −1σ 28.440,55\n- (spot estimado 29.432,72)\n\nSon referencias, no objetivos.\n\n**Macro**\n- US officials met Iran-backed Houthis in Oman over the weekend, sources say - Reuters\n- US House takes up Russia sanctions bill backed by late senator Graham - Reuters\n- China's top diplomat urges Iran, US to show restraint, revive talks - Reuters\n- Flyers are happier with U.S. airports, despite near record travel levels, J.D. Power report shows\n- Yield on 10-year Treasury hovers above 5% as investors await Fed decision\n- China defence minister urges an end to 'provocative acts' to open security forum - Reuters\n- Strait of Hormuz ship crossings remain in single digits, data shows - Reuters\n- Boeing, Korean Air finalize order for 103 aircraft - Reuters\n\nOtras métricas: DEX $-440B (massive short delta, heavy sell headwind) · VEX +$52M (vol compression buy flow) · CHEX $-301M (extreme sell pressure into close) · Delta imbalance +130.404 (long delta) · Skew 25Δ 6,0 pts (slightly elevated) · ATM IV 22,5% · VRP +13,4 pts.",
-  "PM": "**1. Cobertura**\nWatcher con una sola corrida en la ventana pedida (08:33–16:08), arrancada el 15/09 18:17 y activa al menos hasta las 16:01, sin reinicios ni huecos; último latido a las 15:53 (hace 15 minutos), vivo al cierre. Sin calendario macro.\n\n**2. Cómo cerró**\n- **VETO:** Sin VETO\n- Score **31/124** — 🔴 BEARISH BIAS (capas: REGIME 0/43, GREEKS 18/30, FLOW 6/41, VOL 7/10)\n- GEX SPX **−$7,1B** — dealers amplify. GEX cayendo 3 de 3 días.\n- Spot SPX 7.551,81, **2,4% por debajo del zero gamma** (7.732,66) — régimen negativo.\n- Aviso del scorer: Neg GEX + VOMEX +$1.092.951M — dealers amplifican spot y vol a la vez.\n\n**3. Qué pasó en la sesión**\n- **Barra de mayor confluencia: 14:30, 16 símbolos y 5 temas** (bonos/tasas, dólar/FX, tech/semis, volatilidad, índices/futuros): DXY, ES, NQ, SPX, SPY, TLT, toda la curva US05Y/10Y/30Y, el complejo VIX/VIX9D/VIX3M/VXN, XLK, ZN y ZT en la misma vela. Es un movimiento macro coordinado, no rotación sectorial: se movieron a la vez tasas, dólar, índices y vol.\n- Las tres barras siguientes (14:00, 14:35, 14:55) repiten el mismo cruce y a las 14:35 se suma crédito (HYG), con TLT como el símbolo más activado de la tarde. El bloque de tasas domina el recuento del día (51 eventos, TLT y ZT al frente).\n- Dos cambios de régimen en la estructura temporal del VIX: 09:40 en 0,872 y 15:20 en 0,9408, con VIX marcando 18,55 a las 15:15.\n\n**4. Niveles para el overnight**\n\n**ES**\nBanderas: ESTRUCTURA RARA — el call wall (7.669,19) está ABAJO del zero gamma (7.801,85). EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que van en lista plana por precio descendente.\n- Zero Gamma / Vol trigger 7.801,85\n- Max GEX 7.769,19\n- EM +1σ 7.754,48\n- Call wall 7.669,19\n- Put wall 7.569,19\n- EM −1σ 7.487,52\n- (spot estimado 7.621,00)\n\n**NQ**\nBanderas: ESTRUCTURA RARA — el call wall (29.450,80) está ABAJO del zero gamma (29.734,94). EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que van en lista plana por precio descendente.\n- EM +1σ 29.965,15\n- Zero Gamma / Vol trigger 29.734,94\n- Call wall 29.450,80\n- Max GEX / Put wall 29.036,00\n- EM −1σ 28.498,42\n- (spot estimado 29.231,78)\n\nSon referencias, no objetivos.\n\n**Titulares**\n- Federal Reserve issues FOMC statement\n- Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting\n- Boeing CEO: 737 Max production taking 'a little bit longer' to stabilize than expected\n- Fed delivers its first hike in 3 years. Plus, what's moving Starbucks and GE Vernova\n- US House expected to pass Russia sanctions bill backed by late Senator Graham - Reuters\n- Yemen offensive elevates enigmatic Houthi commander's standing - reuters.com\n- Lagging sector looks poised for a rebound. Here's how Mike Khouw is trading it\n- American Airlines says 30% of seats drive half of revenue as premium cabin rush heats up\n\nOtras métricas: DEX SIN DATO — no se midió | VEX +$72M | CHEX −$229M | flujo neto SPX −$505M | delta imbalance −244.733 | skew 25Δ 4,8 pts | ATM IV 16,2% | VRP +7,1 pts."
+  "AM": "**Cobertura**\nVentana desde el brief PM del 2026-09-16 16:08 hasta hoy 08:33, con 1 reinicio: una corrida activa al menos hasta el 16 a las 16:09 y otra desde el 16 a las 19:10 activa al menos hasta hoy 08:20 (último latido hace 13 minutos); entre las dos hay un hueco de 3 h de sesión sin cobertura. Sin calendario macro.\n\n**Qué pasó desde el brief anterior**\nSin barras de confluencia en la ventana: no hay una barra multi-símbolo para leer hoy.\n\n- Bonos fueron el tema dominante: 14 de los 23 eventos, repartidos entre ZB, ZT y ZN desde el 16 a las 18:40 hasta hoy 07:10 — actividad de tasas sostenida toda la madrugada y en toda la curva, no en un solo vencimiento.\n- Índices/futuros aportaron 9 eventos (ES 7, NQ 2) desde el 16 a las 18:40 hasta las 07:55 de hoy, con ES muy por delante de NQ.\n- El único evento avisado fue ES el 16 a las 19:25 en 7.645,00, régimen overnight — el pico de volumen relativo de la ventana.\n\n**Régimen hoy**\n- ESTADO_VETO: Sin VETO\n- Score 33/124 — 🔴 BEARISH BIAS\n- GEX: Negative GEX $-1.4B — dealers amplify. GEX@spot negativo, y GEX cayendo 3 de 3 días.\n- Spot SPX 7.551,81 — 1,3% por debajo del zero gamma 7.646,25 (régimen negativo).\n- Aviso del scorer: Neg GEX + VOMEX +$61589M — dealers amplify both spot AND vol simultaneously.\n- Basis ES +158,19 (ESZ6) — FUERA del rango esperado +20/+150: los niveles ES convertidos pueden estar desplazados. Basis NQ +42,13 (NQZ6). Ambos con warning de RTH.\n\n**Niveles del día**\n\n**ES**\nspot estimado 7.710,00 · IV 15,7 · exp. 2026-09-21\n- Call wall 7.858,19\n- EM +1σ 7.839,36\n- Pivote zero gamma 7.804,44\n- EM −1σ 7.580,64\n- Max GEX / Put wall 7.508,19\n\n**NQ**\nBandera: EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente.\nspot estimado 29.688,72 · IV 19,54 · exp. 2026-09-21\n- Call wall 30.332,45\n- Zero Gamma / Vol trigger 30.326,97\n- EM +1σ 30.321,49\n- Max GEX 30.121,81\n- Put wall 29.489,88\n- EM −1σ 29.055,96\n- (spot estimado 29.688,72)\n\nSon referencias, no objetivos.\n\n**Macro**\n- Federal Reserve issues FOMC statement\n- Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting\n- EXCLUSIVE: China presses Iran to help rein in Houthis after Saudi appeal, sources say - Reuters\n- Charities say gifts by deceased donors are getting held up at financial firms\n- UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters\n- Impoverished by war in Iran, Afghan migrants return to Taliban rule - Reuters\n- How Yemen's Houthis went from a small mountain militia to a big regional threat - Reuters\n- US allies fret over how Trump might play his Taiwan hand with Xi - Reuters\n\nActividad inusual:\n- SPX: NEUTRAL, también sin 0DTE · 0DTE = 0% del volumen de las señales\n- QQQ: BEARISH, también sin 0DTE · 0DTE = 0% del volumen de las señales\n- SPY: BULLISH, también sin 0DTE · 0DTE = 0% del volumen de las señales\n\nOtras métricas: DEX $-10B (dealers short delta, mild headwind) · VEX +$5M · CHEX $-19M · delta imbalance -749.363 · skew 25Δ 4,1 pts · flujo neto SPX -$827M.",
+  "PM": null
  },
  "stale_flags": {
   "flow_stale": false,
@@ -141,7 +137,7 @@
   "iv_sintetica": false,
   "zero_gamma_fuera_de_span": false,
   "cadena_vacia": false,
-  "basis_fuera_de_rango": false,
+  "basis_fuera_de_rango": true,
   "basis_fuera_de_rth": true,
   "expiraciones_no_adyacentes": false
  }
