@@ -188,7 +188,7 @@ function bloqueInstrumento(nombre, d) {
     h += '<div class="row" style="padding-top:10px">' +
            '<span class="k">Basis ' + esc(d.basis.contrato || '') + '</span>' +
            '<span class="v">' + val(d.basis.valor) +
-           (d.basis.rth_warning ? '<small>capturado fuera de rueda</small>' : '') +
+           (d.basis.procedencia ? '<small>' + (d.basis.rth_warning ? '⚠ ' : '') + esc(d.basis.procedencia) + '</small>' : (d.basis.rth_warning ? '<small>capturado fuera de rueda</small>' : '')) +
          '</span></div>';
   }
   return h + '</div>';
