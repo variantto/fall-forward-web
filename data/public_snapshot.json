@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-09-30T16:09:13-04:00",
- "sesion": "2026-09-30",
- "slot": "1605",
+ "generated_at": "2026-10-01T08:34:40-04:00",
+ "sesion": "2026-10-01",
+ "slot": "0830",
  "frescura": {
-  "artefacto_mas_viejo_min": 0.6,
+  "artefacto_mas_viejo_min": 0.7,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 33,
+  "score": 40,
   "max": 124,
   "label": "🔴 BEARISH BIAS",
   "bias": "BEARISH",
@@ -25,8 +25,8 @@
    "signo": "negativo"
   },
   "spot_spx": 7651.5400390625,
-  "zero_gamma": 7700.983355028597,
-  "distancia_pct": -0.65,
+  "zero_gamma": 7701.879250545208,
+  "distancia_pct": -0.66,
   "vix": {
    "regimen": "calma",
    "desde": "tensión",
@@ -38,65 +38,65 @@
  "niveles": {
   "futuros": {
    "ES": {
-    "spot_estimado": 7709.21,
-    "pivote_zero_gamma": 7758.65,
-    "em_1sigma": "147.10",
-    "iv": "17.62",
+    "spot_estimado": 7709.29,
+    "pivote_zero_gamma": 7759.63,
+    "em_1sigma": "175.25",
+    "iv": "25.71",
     "expiry": "2026-10-02",
-    "ts": "2026-09-30 16:08",
+    "ts": "2026-10-01 08:34",
     "formato": "lista_plana",
     "niveles_por_precio": [
-     "EM +1σ 7,856.31",
-     "Zero Gamma / Vol trigger 7,758.65",
-     "Call wall 7,757.67",
-     "Max GEX / Put wall 7,682.67",
-     "EM −1σ 7,562.11",
-     "(spot estimado 7,709.21)"
+     "EM +1σ 7,884.54",
+     "Zero Gamma / Vol trigger 7,759.63",
+     "Call wall 7,757.75",
+     "Max GEX / Put wall 7,682.75",
+     "EM −1σ 7,534.04",
+     "(spot estimado 7,709.29)"
     ],
     "banderas": [
-     "ESTRUCTURA RARA: el call wall (7,757.67) está ABAJO del zero gamma (7,758.65)",
+     "ESTRUCTURA RARA: el call wall (7,757.75) está ABAJO del zero gamma (7,759.63)",
      "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
     ],
     "basis": {
-     "valor": 57.67,
+     "valor": 57.75,
      "contrato": "ESZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-09-30T15:55:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-09-30T16:00:00-04:00",
+     "procedencia": "cierre RTH 30-09 16:00",
      "desactualizado": null,
      "no_medido": null
     },
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 30685.44,
-    "pivote_zero_gamma": 30650.18,
-    "em_1sigma": "736.68",
-    "iv": "22.0",
-    "expiry": "2026-10-02",
-    "ts": "2026-09-30 16:08",
+    "spot_estimado": 30685.81,
+    "pivote_zero_gamma": 30649.3,
+    "em_1sigma": "668.66",
+    "iv": "19.97",
+    "expiry": "2026-10-05",
+    "ts": "2026-10-01 08:34",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 31,422.12",
-     "Call wall 30,902.38"
+     "EM +1σ 31,354.47",
+     "Call wall / Max GEX 31,317.55"
     ],
     "soportes": [
-     "Max GEX / Put wall 30,280.18",
-     "EM −1σ 29,948.76"
+     "Put wall 30,280.55",
+     "EM −1σ 30,017.15"
     ],
     "banderas": null,
     "basis": {
-     "valor": 41.4797,
+     "valor": 41.4802,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-09-30T15:55:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-09-30T16:00:00-04:00",
+     "procedencia": "cierre RTH 30-09 16:00",
      "desactualizado": null,
      "no_medido": null
     },
@@ -106,41 +106,41 @@
   "tickers": {
    "SPX": {
     "spot": 7651.5400390625,
-    "zero_gamma": 7700.983355028597,
+    "zero_gamma": 7701.879250545208,
     "call_wall": 7700.0,
     "put_wall": 7625.0,
-    "expected_move_1sigma": 147.10082763791686,
-    "em_superior": 7798.640866700417,
-    "em_inferior": 7504.439211424583,
+    "expected_move_1sigma": 175.25308000287887,
+    "em_superior": 7826.793119065379,
+    "em_inferior": 7476.286959059621,
     "expiry": "2026-10-02",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 762.47998046875,
-    "zero_gamma": 767.6700292217038,
-    "call_wall": 772.0,
-    "put_wall": 745.0,
-    "expected_move_1sigma": 14.325901128184638,
-    "em_superior": 776.8058815969347,
-    "em_inferior": 748.1540793405653,
-    "expiry": "2026-10-02",
+    "spot": 762.6300048828125,
+    "zero_gamma": 772.6918346983855,
+    "call_wall": 770.0,
+    "put_wall": 755.0,
+    "expected_move_1sigma": 12.231834036170104,
+    "em_superior": 774.8618389189826,
+    "em_inferior": 750.3981708466424,
+    "expiry": "2026-10-05",
     "sin_dato": false
    },
    "QQQ": {
     "spot": 739.77001953125,
-    "zero_gamma": 738.9180969174408,
-    "call_wall": 745.0,
+    "zero_gamma": 738.8927462343756,
+    "call_wall": 755.0,
     "put_wall": 730.0,
-    "expected_move_1sigma": 17.75741582141431,
-    "em_superior": 757.5274353526643,
-    "em_inferior": 722.0126037098357,
-    "expiry": "2026-10-02",
+    "expected_move_1sigma": 16.11889063425653,
+    "em_superior": 755.8889101655066,
+    "em_inferior": 723.6511288969934,
+    "expiry": "2026-10-05",
     "sin_dato": false
    }
   }
  },
  "briefs": {
-  "AM": "**Cobertura**\nWatcher activo en dos tramos (29-09 20:49→16:18 por latido, y 29-09 19:59→30-09 08:22), 1 reinicio, con un hueco de 3,7 h de sesión entre las 16:18 y las 19:59 (cota superior: pudo seguir vivo sin disparar nada); último latido hace 11,8 minutos, vivo al cierre de la ventana.\n\n**Qué pasó desde el brief anterior**\nBarra de mayor confluencia: **09-30 01:55**, 4 símbolos (ES, ZB, ZN, ZT) cruzando 2 temas — bonos/tasas e índices/futuros. No es rotación de un solo tema: la curva y el índice se movieron en la misma barra.\n\n- Bonos fueron el motor de la madrugada: 7 de los 9 eventos, repartidos entre ZB, ZN y ZT, desde las 21:30 hasta la 01:55.\n- Índices aparecieron sólo dos veces (ES en la barra de 01:55, NQ a las 06:15): participación puntual, no actividad sostenida.\n- El único evento avisado fue ES a las 01:55 con rvol 3,75 en régimen overnight, a 7.746,25 — es la misma barra de confluencia.\n\n**Régimen hoy**\nVETO 1: Spot 7,671 within 0.18% of Zero Gamma 7,657 — regime unstable\n\nScore 62/124 — ❌ NO TRADE (bias NEUTRAL).\nGEX: Weak +GEX $230M; GEX@spot $0.1B (moderate pin); GEX cayendo 2 de 3 días.\nSpot SPX 7.670,84 vs zero gamma 7.656,94 — apenas por encima (0,18%).\nBasis ES 59,94 (cierre RTH 29-09 16:00).\nAviso del scorer: DTE demasiado bajo para griegas confiables (VEX/CHEX pueden ser inestables).\n\n**Niveles del día**\n\n**ES**\nResistencias:\n- EM +1σ 7.879,35\n- Call wall / Max GEX 7.859,94\n\nPivote (zero gamma): 7.716,88 — spot estimado 7.730,78\n\nSoportes:\n- Put wall 7.709,94\n- EM −1σ 7.582,21\n\n**NQ**\nResistencias:\n- EM +1σ 31.524,90\n- Call wall 30.910,42\n\nPivote (zero gamma): 30.896,32 — spot estimado 30.617,08\n\nSoportes:\n- Max GEX / Put wall 30.288,06\n- EM −1σ 29.709,27\n\nSon referencias, no objetivos.\n\n**Macro**\nSin calendario macro.\n\n- Personal Income and Outlays, August 2026\n- GDP, (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025\n- Agencies publish resolution plan feedback letters for 15 banking organizations\n- Israeli officials say diverted flydubai incident may be attempted 'terror attack' - Reuters\n- Tennis star Jessica Pegula says helping her family run the Buffalo Bills could be in her future\n- Man City guilty of ‘sham’ sponsorship deals after decade of English soccer dominance\n- Joy mixed with fear as US forces quit Iraq leaving potential security vacuum - Reuters\n- Micron earnings hit Wall Street after the bell. Here's how traders are positioned into the report\n\nActividad inusual:\n- SPX: BULLISH — datos de la sesión del 2026-09-29, no de hoy\n- QQQ: BULLISH — datos de la sesión del 2026-09-29, no de hoy\n- SPY: BEARISH — datos de la sesión del 2026-09-29, no de hoy\n\nOtras métricas: DEX −$9B (dealers cortos de delta); VEX +$36M; CHEX −$47M; delta imbalance +1.179.763; skew 25Δ 1,6 pts; flujo neto +$487M. Flujo neto y delta imbalance según la última corrida del scorer de hoy; ATM IV 21,7%, VRP +10,7 pts.",
+  "AM": null,
   "PM": null
  },
  "stale_flags": {
