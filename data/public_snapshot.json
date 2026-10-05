@@ -1,19 +1,19 @@
 {
  "schema": 1,
- "generated_at": "2026-10-02T16:09:16-04:00",
- "sesion": "2026-10-02",
- "slot": "1605",
+ "generated_at": "2026-10-05T08:37:27-04:00",
+ "sesion": "2026-10-05",
+ "slot": "0830",
  "frescura": {
-  "artefacto_mas_viejo_min": 0.6,
+  "artefacto_mas_viejo_min": 1.1,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 46,
+  "score": 50,
   "max": 124,
-  "label": "❌ NO TRADE",
+  "label": "🔴 BEARISH BIAS",
   "bias": "BEARISH",
   "estado_veto": [
-   "VETO 1: Spot 7,723 within 0.29% of Zero Gamma 7,701 — regime unstable"
+   "Sin VETO"
   ],
   "estado_datos": null,
   "magnitudes_sin_dato": null,
@@ -25,8 +25,8 @@
    "signo": "negativo"
   },
   "spot_spx": 7722.72021484375,
-  "zero_gamma": 7700.70547789708,
-  "distancia_pct": 0.29,
+  "zero_gamma": 7675.166304318746,
+  "distancia_pct": 0.62,
   "vix": {
    "regimen": "calma",
    "desde": "tensión",
@@ -39,18 +39,18 @@
   "futuros": {
    "ES": {
     "spot_estimado": 7776.3,
-    "pivote_zero_gamma": 7754.29,
-    "em_1sigma": "75.25",
-    "iv": "8.93",
+    "pivote_zero_gamma": 7728.75,
+    "em_1sigma": "114.90",
+    "iv": "16.7",
     "expiry": "2026-10-06",
-    "ts": "2026-10-02 16:08",
+    "ts": "2026-10-05 08:36",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 7,851.55",
+     "EM +1σ 7,891.20",
      "Call wall 7,813.58"
     ],
     "soportes": [
-     "EM −1σ 7,701.05",
+     "EM −1σ 7,661.41",
      "Max GEX / Put wall 7,653.58"
     ],
     "banderas": null,
@@ -61,39 +61,39 @@
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-02T15:55:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-10-02T16:00:00-04:00",
+     "procedencia": "cierre RTH 02-10 16:00",
      "desactualizado": null,
      "no_medido": null
     },
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 31070.92,
-    "pivote_zero_gamma": 30778.27,
-    "em_1sigma": "426.95",
-    "iv": "12.59",
-    "expiry": "2026-10-06",
-    "ts": "2026-10-02 16:08",
+    "spot_estimado": 31071.22,
+    "pivote_zero_gamma": 30774.84,
+    "em_1sigma": "781.78",
+    "iv": "23.06",
+    "expiry": "2026-10-07",
+    "ts": "2026-10-05 08:36",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 31,497.86",
-     "Call wall 31,088.32"
+     "EM +1σ 31,852.99",
+     "Call wall / Max GEX 31,627.49"
     ],
     "soportes": [
-     "EM −1σ 30,643.97",
-     "Max GEX / Put wall 30,508.01"
+     "Put wall 30,674.11",
+     "EM −1σ 30,289.44"
     ],
     "banderas": null,
     "basis": {
-     "valor": 41.4511,
+     "valor": 41.4515,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-02T15:55:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-10-02T16:00:00-04:00",
+     "procedencia": "cierre RTH 02-10 16:00",
      "desactualizado": null,
      "no_medido": null
     },
@@ -103,41 +103,41 @@
   "tickers": {
    "SPX": {
     "spot": 7722.72021484375,
-    "zero_gamma": 7700.70547789708,
+    "zero_gamma": 7675.166304318746,
     "call_wall": 7760.0,
     "put_wall": 7600.0,
-    "expected_move_1sigma": 75.24577454821426,
-    "em_superior": 7797.965989391964,
-    "em_inferior": 7647.474440295536,
+    "expected_move_1sigma": 114.8950979529138,
+    "em_superior": 7837.615312796664,
+    "em_inferior": 7607.825116890836,
     "expiry": "2026-10-06",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 769.6599731445312,
-    "zero_gamma": 763.940166960119,
-    "call_wall": 775.0,
-    "put_wall": 765.0,
-    "expected_move_1sigma": 7.356366608594628,
-    "em_superior": 777.0163397531259,
-    "em_inferior": 762.3036065359366,
-    "expiry": "2026-10-06",
+    "spot": 769.6400146484375,
+    "zero_gamma": 767.3187753256672,
+    "call_wall": 770.0,
+    "put_wall": 760.0,
+    "expected_move_1sigma": 13.251193476760864,
+    "em_superior": 782.8912081251983,
+    "em_inferior": 756.3888211716767,
+    "expiry": "2026-10-07",
     "sin_dato": false
    },
    "QQQ": {
     "spot": 749.5800170898438,
-    "zero_gamma": 742.5222054311494,
-    "call_wall": 750.0,
-    "put_wall": 736.0,
-    "expected_move_1sigma": 10.296842914726883,
-    "em_superior": 759.8768600045706,
-    "em_inferior": 739.2831741751169,
-    "expiry": "2026-10-06",
+    "zero_gamma": 742.4297320013086,
+    "call_wall": 763.0,
+    "put_wall": 740.0,
+    "expected_move_1sigma": 18.859825068594272,
+    "em_superior": 768.4398421584381,
+    "em_inferior": 730.7201920212494,
+    "expiry": "2026-10-07",
     "sin_dato": false
    }
   }
  },
  "briefs": {
-  "AM": null,
+  "AM": "**Cobertura**\nWatcher del 30-09 08:34 al 05-10 08:37, 5 corridas y 4 reinicios, con huecos entre corridas de 4,2 h, 4,2 h, 4,5 h y uno de 16 h (el mayor); último latido hace 13,6 minutos. Sin calendario macro.\n\n**Qué pasó desde el brief anterior**\nLa barra de mayor confluencia fue el **01-10 13:55**: 11 símbolos y 5 temas (bonos/tasas, crédito, tech/semis, volatilidad e índices/futuros) en la misma barra — ES, SPX, SPY, NQ, HYG, US05Y, US30Y, ZB, VIX, VIX3M y XLK. Es un movimiento coordinado a través de capas, no rotación sectorial. Cinco minutos antes, a las 13:30, otra barra de 10 símbolos y 5 temas sumó dólar (DXY) y TLT.\n\n- 279 eventos en la ventana, mayoría por rvol (225) y el resto por cruce de nivel (54). El bloque más cargado es bonos/tasas con 97 eventos (ZB, ZT, TLT, ZN al frente), por encima de índices/futuros con 82: la actividad estuvo concentrada en tasas tanto o más que en equity.\n- Varios picos en horario overnight con bonos y futuros juntos: 30-09 16:00 (ES 7.712,75, NQ 30.675, más ZN/ZB/ZT) y 02-10 08:30 (ES 7.791,25, NQ 31.118,25, más ZN/ZB/ZT). Son barras de madrugada con equity y tasas moviéndose en simultáneo.\n- Crédito (HYG, 37 eventos) y tech (XLK/SMH, 25) dejaron de aparecer después del 02-10 14:30; el tramo del 05-10 muestra sólo ES (00:35), DXY (00:10) y NQ (04:45).\n\n**Régimen hoy**\nSin VETO\nScore 50/124 — 🔴 BEARISH BIAS\nGEX: Negative GEX $-0,5B — dealers amplify. GEX subiendo 2 de 3 días.\nSpot SPX 7.722,72 vs zero gamma 7.675,17 — 0,6% arriba, margen fino.\nBasis ES 53,58 (cierre RTH 02-10 16:00).\nAviso del scorer: DTE demasiado bajo para griegas confiables — las señales VEX/CHEX pueden ser inestables. Block data no disponible. Confirmación cross-ticker: sólo 1 de 3 (SPX/QQQ/SPY).\n\n**Niveles del día**\n\n**ES**\nspot_estimado 7.776,30 · IV 16,7 · EM 1σ 114,90 · expiry 2026-10-06\n- Resistencias: EM +1σ 7.891,20 · Call wall 7.813,58\n- Pivote (zero gamma): 7.728,75\n- Soportes: EM −1σ 7.661,41 · Max GEX / Put wall 7.653,58\n\n**NQ**\nspot_estimado 31.071,22 · IV 23,06 · EM 1σ 781,78 · expiry 2026-10-07\n- Resistencias: EM +1σ 31.852,99 · Call wall / Max GEX 31.627,49\n- Pivote (zero gamma): 30.774,84\n- Soportes: Put wall 30.674,11 · EM −1σ 30.289,44\n\nSon referencias, no objetivos.\n\n**Macro**\n- Why airfare could rise even more, but airline profits won't\n- It's time for us to put cash to work in this ugly market. Here's where we will do our buying\n- Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance\n- Here are 3 things we're watching in the stock market in the week ahead\n- This NYC startup requires 4 days in office but just let everyone work remote for a whole month\n- Starting a watch collection? What beginners should know before buying\n- OpenAI safety employee quits, calls for nuclear-level safeguards\n- Gen Alpha kids are earning money. Here's how parents can help them save and invest\n\nActividad inusual:\n- SPX: BULLISH — datos de la sesión del 2026-10-02, no de hoy\n- QQQ: BEARISH — datos de la sesión del 2026-10-02, no de hoy\n- SPY: BULLISH — datos de la sesión del 2026-10-02, no de hoy\n\nOtras métricas: DEX $-6B (dealers short delta, mild headwind) · VEX +$2M · CHEX $-33M · delta imbalance -1.032.805 · skew 25Δ 4,5pts · flujo neto SPX $-1.079M · ATM IV 16,7% · VRP +6,4pts.",
   "PM": null
  },
  "stale_flags": {
