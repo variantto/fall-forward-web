@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-13T09:38:30-04:00",
+ "generated_at": "2026-10-13T12:03:30-04:00",
  "sesion": "2026-10-13",
- "slot": "0935",
+ "slot": "1200",
  "frescura": {
-  "artefacto_mas_viejo_min": 0.7,
+  "artefacto_mas_viejo_min": 0.5,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 65,
+  "score": 57,
   "max": 124,
   "label": "⚪ NEUTRAL",
   "bias": "NEUTRAL",
@@ -21,12 +21,12 @@
  },
  "regimen": {
   "gex": {
-   "valor": 1068048392.103601,
+   "valor": 845602077.4085016,
    "signo": "positivo"
   },
-  "spot_spx": 7805.68994140625,
-  "zero_gamma": 7775.081253964091,
-  "distancia_pct": 0.39,
+  "spot_spx": 7796.7001953125,
+  "zero_gamma": 7758.533262250338,
+  "distancia_pct": 0.49,
   "vix": {
    "regimen": "calma",
    "desde": "tensión",
@@ -38,66 +38,67 @@
  "niveles": {
   "futuros": {
    "ES": {
-    "spot_estimado": 7855.09,
-    "pivote_zero_gamma": 7824.48,
-    "em_1sigma": "101.94",
-    "iv": "11.97",
+    "spot_estimado": 7845.35,
+    "pivote_zero_gamma": 7807.18,
+    "em_1sigma": "102.08",
+    "iv": "12.0",
     "expiry": "2026-10-15",
-    "ts": "2026-10-13 09:37",
+    "ts": "2026-10-13 12:03",
     "formato": "lista_plana",
     "niveles_por_precio": [
-     "EM +1σ 7,957.03",
-     "Call wall / Max GEX 7,874.40",
-     "Put wall 7,849.40",
-     "Zero Gamma / Vol trigger 7,824.48",
-     "EM −1σ 7,753.14",
-     "(spot estimado 7,855.09)"
+     "EM +1σ 7,947.43",
+     "Max GEX 7,873.65",
+     "Call wall 7,848.65",
+     "Put wall 7,823.65",
+     "Zero Gamma / Vol trigger 7,807.18",
+     "EM −1σ 7,743.27",
+     "(spot estimado 7,845.35)"
     ],
     "banderas": [
-     "ESTRUCTURA RARA: el put wall (7,849.40) está ARRIBA del zero gamma (7,824.48) — el soporte de gamma queda por encima del pivote de régimen",
+     "ESTRUCTURA RARA: el put wall (7,823.65) está ARRIBA del zero gamma (7,807.18) — el soporte de gamma queda por encima del pivote de régimen",
      "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
     ],
     "basis": {
-     "valor": 49.4,
+     "valor": 48.65,
      "contrato": "ESZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-12T16:00:00-04:00",
-     "procedencia": "cierre RTH 12-10 16:00",
+     "measured_at": "2026-10-13T11:50:00-04:00",
+     "procedencia": "medido en la sesión (RTH 11:50)",
      "desactualizado": null,
      "no_medido": null
     },
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 30690.14,
-    "pivote_zero_gamma": 30904.67,
-    "em_1sigma": "662.22",
-    "iv": "19.77",
+    "spot_estimado": 30731.17,
+    "pivote_zero_gamma": 30833.86,
+    "em_1sigma": "674.13",
+    "iv": "20.1",
     "expiry": "2026-10-15",
-    "ts": "2026-10-13 09:37",
+    "ts": "2026-10-13 12:03",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 31,352.36",
-     "Call wall 31,060.80"
+     "EM +1σ 31,405.30",
+     "Call wall 31,056.22"
     ],
     "soportes": [
-     "Put wall 30,646.66",
-     "Max GEX 30,398.17",
-     "EM −1σ 30,027.92"
+     "Put wall 30,642.14",
+     "Max GEX 30,393.69",
+     "EM −1σ 30,057.04"
     ],
     "banderas": null,
     "basis": {
-     "valor": 41.4144,
+     "valor": 41.4083,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-12T16:00:00-04:00",
-     "procedencia": "cierre RTH 12-10 16:00",
+     "measured_at": "2026-10-13T11:50:00-04:00",
+     "procedencia": "medido en la sesión (RTH 11:50)",
      "desactualizado": null,
      "no_medido": null
     },
@@ -106,35 +107,35 @@
   },
   "tickers": {
    "SPX": {
-    "spot": 7805.68994140625,
-    "zero_gamma": 7775.081253964091,
-    "call_wall": 7825.0,
-    "put_wall": 7800.0,
-    "expected_move_1sigma": 101.94497027237122,
-    "em_superior": 7907.634911678621,
-    "em_inferior": 7703.744971133879,
+    "spot": 7796.7001953125,
+    "zero_gamma": 7758.533262250338,
+    "call_wall": 7800.0,
+    "put_wall": 7775.0,
+    "expected_move_1sigma": 102.0827680454186,
+    "em_superior": 7898.782963357919,
+    "em_inferior": 7694.617427267081,
     "expiry": "2026-10-15",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 778.0599975585938,
-    "zero_gamma": 780.6869659698391,
+    "spot": 777.0401000976562,
+    "zero_gamma": 780.4232775443825,
     "call_wall": 781.0,
     "put_wall": 772.0,
-    "expected_move_1sigma": 10.221153990884313,
-    "em_superior": 788.2811515494781,
-    "em_inferior": 767.8388435677094,
+    "expected_move_1sigma": 10.241668696833322,
+    "em_superior": 787.2817687944896,
+    "em_inferior": 766.7984314008229,
     "expiry": "2026-10-15",
     "sin_dato": false
    },
    "QQQ": {
-    "spot": 741.0499877929688,
-    "zero_gamma": 746.2328682242221,
+    "spot": 742.1500244140625,
+    "zero_gamma": 744.6328661176683,
     "call_wall": 750.0,
     "put_wall": 740.0,
-    "expected_move_1sigma": 15.985069569929024,
-    "em_superior": 757.0350573628978,
-    "em_inferior": 725.0649182230397,
+    "expected_move_1sigma": 16.276016462905808,
+    "em_superior": 758.4260408769683,
+    "em_inferior": 725.8740079511567,
     "expiry": "2026-10-15",
     "sin_dato": false
    }
