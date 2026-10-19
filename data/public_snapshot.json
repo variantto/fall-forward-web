@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T15:33:40-04:00",
+ "generated_at": "2026-10-19T16:08:57-04:00",
  "sesion": "2026-10-19",
- "slot": "1530",
+ "slot": "1605",
  "frescura": {
-  "artefacto_mas_viejo_min": 0.6,
+  "artefacto_mas_viejo_min": 1.3,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 38,
+  "score": 42,
   "max": 124,
   "label": "🔴 BEARISH BIAS",
   "bias": "BEARISH",
@@ -19,17 +19,17 @@
   "magnitudes_sin_dato": null,
   "divergencias": [
    "Gamma regime 0% vs Flow signals 41% — structural positioning and institutional flow disagree",
-   "flujo neto SPX +0.09B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack"
+   "flujo neto SPX +0.04B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack"
   ]
  },
  "regimen": {
   "gex": {
-   "valor": -4590349968.0583,
+   "valor": -4488501320.722099,
    "signo": "negativo"
   },
-  "spot_spx": 7707.66015625,
-  "zero_gamma": 7780.762180937114,
-  "distancia_pct": -0.95,
+  "spot_spx": 7690.72998046875,
+  "zero_gamma": 7780.053510571679,
+  "distancia_pct": -1.16,
   "vix": {
    "regimen": "tensión",
    "desde": "calma",
@@ -41,68 +41,69 @@
  "niveles": {
   "futuros": {
    "ES": {
-    "spot_estimado": 7749.79,
-    "pivote_zero_gamma": 7822.89,
-    "em_1sigma": "107.39",
-    "iv": "12.77",
+    "spot_estimado": 7732.9,
+    "pivote_zero_gamma": 7822.22,
+    "em_1sigma": "124.02",
+    "iv": "14.78",
     "expiry": "2026-10-21",
-    "ts": "2026-10-19 15:33",
+    "ts": "2026-10-19 16:07",
     "formato": "lista_plana",
     "niveles_por_precio": [
-     "EM +1σ 7,857.18",
-     "Zero Gamma / Vol trigger 7,822.89",
-     "Call wall 7,792.13",
-     "Max GEX / Put wall 7,742.13",
-     "EM −1σ 7,642.40",
-     "(spot estimado 7,749.79)"
+     "EM +1σ 7,856.92",
+     "Zero Gamma / Vol trigger 7,822.22",
+     "Call wall 7,792.17",
+     "Max GEX 7,742.17",
+     "Put wall 7,712.17",
+     "EM −1σ 7,608.88",
+     "(spot estimado 7,732.90)"
     ],
     "banderas": [
-     "ESTRUCTURA RARA: el call wall (7,792.13) está ABAJO del zero gamma (7,822.89)",
+     "ESTRUCTURA RARA: el call wall (7,792.17) está ABAJO del zero gamma (7,822.22)",
      "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
     ],
     "basis": {
-     "valor": 42.13,
+     "valor": 42.17,
      "contrato": "ESZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-19T15:20:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:20)",
+     "measured_at": "2026-10-19T15:55:00-04:00",
+     "procedencia": "medido en la sesión (RTH 15:55)",
      "desactualizado": null,
      "no_medido": null
     },
     "origen_sin_dato": false
    },
    "NQ": {
-    "spot_estimado": 29816.16,
-    "pivote_zero_gamma": 30350.76,
-    "em_1sigma": "712.12",
-    "iv": "21.89",
+    "spot_estimado": 29723.15,
+    "pivote_zero_gamma": 30320.63,
+    "em_1sigma": "770.84",
+    "iv": "23.77",
     "expiry": "2026-10-21",
-    "ts": "2026-10-19 15:33",
+    "ts": "2026-10-19 16:07",
     "formato": "lista_plana",
     "niveles_por_precio": [
-     "EM +1σ 30,528.27",
-     "Zero Gamma / Vol trigger 30,350.76",
-     "Call wall 30,205.94",
-     "Max GEX / Put wall 29,378.38",
-     "EM −1σ 29,104.04",
-     "(spot estimado 29,816.16)"
+     "EM +1σ 30,493.99",
+     "Zero Gamma / Vol trigger 30,320.63",
+     "Call wall 30,204.77",
+     "Max GEX / Put wall 29,377.24",
+     "EM −1σ 28,952.31",
+     "(spot estimado 29,723.15)"
     ],
     "banderas": [
-     "ESTRUCTURA RARA: el call wall (30,205.94) está ABAJO del zero gamma (30,350.76)",
+     "ESTRUCTURA RARA: el call wall (30,204.77) está ABAJO del zero gamma (30,320.63)",
      "EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente."
     ],
     "basis": {
-     "valor": 41.378,
+     "valor": 41.3764,
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-10-19T15:20:00-04:00",
-     "procedencia": "medido en la sesión (RTH 15:20)",
+     "measured_at": "2026-10-19T15:55:00-04:00",
+     "procedencia": "medido en la sesión (RTH 15:55)",
      "desactualizado": null,
      "no_medido": null
     },
@@ -111,35 +112,35 @@
   },
   "tickers": {
    "SPX": {
-    "spot": 7707.66015625,
-    "zero_gamma": 7780.762180937114,
+    "spot": 7690.72998046875,
+    "zero_gamma": 7780.053510571679,
     "call_wall": 7750.0,
-    "put_wall": 7700.0,
-    "expected_move_1sigma": 107.39246522829231,
-    "em_superior": 7815.052621478292,
-    "em_inferior": 7600.267691021708,
+    "put_wall": 7670.0,
+    "expected_move_1sigma": 124.02303494566006,
+    "em_superior": 7814.75301541441,
+    "em_inferior": 7566.70694552309,
     "expiry": "2026-10-21",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 768.1400146484375,
-    "zero_gamma": 766.4169758903182,
+    "spot": 766.5999755859375,
+    "zero_gamma": 772.265314767218,
     "call_wall": 770.0,
     "put_wall": 746.0,
-    "expected_move_1sigma": 11.255810141972926,
-    "em_superior": 779.3958247904104,
-    "em_inferior": 756.8842045064646,
+    "expected_move_1sigma": 12.529708616616757,
+    "em_superior": 779.1296842025542,
+    "em_inferior": 754.0702669693208,
     "expiry": "2026-10-21",
     "sin_dato": false
    },
    "QQQ": {
-    "spot": 720.5800170898438,
-    "zero_gamma": 733.4956650650233,
+    "spot": 718.3599853515625,
+    "zero_gamma": 732.8033299871043,
     "call_wall": 730.0,
     "put_wall": 710.0,
-    "expected_move_1sigma": 17.210295720220156,
-    "em_superior": 737.7903128100639,
-    "em_inferior": 703.3697213696236,
+    "expected_move_1sigma": 18.630807201506776,
+    "em_superior": 736.9907925530692,
+    "em_inferior": 699.7291781500558,
     "expiry": "2026-10-21",
     "sin_dato": false
    }
@@ -147,7 +148,7 @@
  },
  "briefs": {
   "AM": "**Cobertura** — Watcher con dos tramos entre el 16-10 16:08 y hoy 08:34: 16-10 08:33→16:17 y 18-10 22:21→19-10 08:21, con 1 reinicio y un hueco acotado de 54,1 h entre ambos (49 h con mercado cerrado, 5,1 h de sesión); último latido hace 12,5 minutos. Sin calendario macro.\n\n**Qué pasó desde el brief anterior**\n\nBarra de mayor confluencia: **19-10 06:35**, 5 símbolos (ES, NQ, ZB, ZN, ZT) cruzando 2 temas — bonos/tasas e índices/futuros en la misma barra: movimiento coordinado, no rotación dentro de un sector.\n\n- 8 eventos en total, todos del mismo detector (volumen relativo), repartidos 4 en índices y 4 en bonos: la actividad del tramo nocturno se concentró ahí y nada más.\n- La curva de tasas participó entera en esa barra (ZT, ZN y ZB juntos, 04:45 a 06:35), no un tramo suelto.\n- En esa barra ES marcó 7.745,50 y NQ 29.727,50, en régimen overnight.\n- El hueco de 54,1 h significa que del cierre del viernes al domingo a la noche no hay nada medido.\n\n**Régimen hoy**\n\n- **VETO 2: QQQ negative GEX (-122M) + SPX skew +12.3pts — dangerous divergence**\n- **DIVERGENCIA CROSS-LAYER:** Gamma regime 0% vs Flow signals 61% — structural positioning and institutional flow disagree (REGIME 0/43, FLOW 25/41).\n- **DIVERGENCIA CROSS-LAYER:** flujo neto SPX +3,11B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack.\n- Score **43/124 — ❌ NO TRADE**. Bias: BEARISH.\n- GEX: **$-4,7B** — negative GEX, dealers amplify. GEX cayendo 3/3 días.\n- Spot SPX 7.659,44 vs zero gamma 7.800,40: **1,8% por debajo**.\n- Basis ES 44,59 (cierre RTH 16-10 16:00).\n\n**Niveles del día**\n\n**ES**\n⚠️ ESTRUCTURA RARA: el call wall (7.794,59) está ABAJO del zero gamma (7.844,99).\n⚠️ EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente.\n- EM +1σ 7.880,20\n- Zero Gamma / Vol trigger 7.844,99\n- Call wall 7.794,59\n- Max GEX 7.744,59\n- Put wall 7.644,59\n- EM −1σ 7.527,86\n- (spot estimado 7.704,03)\n\n**NQ**\n⚠️ EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, así que el formato de tres bloques ordenaría mal. Los niveles van en lista plana por precio descendente.\n- EM +1σ 31.190,33\n- Call wall 30.211,56\n- Zero Gamma / Vol trigger 30.096,09\n- Max GEX 29.383,85\n- Put wall 29.176,92\n- EM −1σ 27.560,81\n- (spot estimado 29.375,57)\n\nSon referencias, no objetivos.\n\n**Macro**\n\n- World Food Programme cuts aid to 500,000 Palestinians in Gaza, cites funding shortages - Reuters\n- At least 18 killed in Houthi attack on Yemeni government military camp in Shabwa, sources say - Reuters\n- UK urges firms not to take part in E1 settlement tender or risk sanctions - Reuters\n- French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall\n- COMMENTARY: Asian refiners' pain is Middle East oil producers' problem - Reuters\n- UK housing market showing signs of mortgage rates impact, Rightmove says - Reuters\n- Why I am taking the other side of the trade that crushed the market Friday\n- Oil slips from five-month high with Hormuz transits in focus - Reuters\n\nActividad inusual:\n- SPX: BEARISH — datos de la sesión del 2026-10-16, no de hoy\n- QQQ: BULLISH — datos de la sesión del 2026-10-16, no de hoy\n- SPY: BULLISH — datos de la sesión del 2026-10-16, no de hoy\n\nOtras métricas: DEX $-15B (dealers short delta, selling into rallies) · VEX +$22M · CHEX $-18M · delta imbalance +4.270.133 · skew 25Δ 12,3 pts · ATM IV 21,1% · VRP +10,6 pts.",
-  "PM": null
+  "PM": "**Cobertura** — Watcher con una sola corrida desde el 2026-10-18 22:21 y activo al menos hasta las 16:01 de hoy, sin reinicios ni huecos; último latido hace 7,3 minutos. Sin calendario macro.\n\n**Cómo cerró**\n\n- **VETO:** Sin VETO\n- **DIVERGENCIA CROSS-LAYER:** Gamma regime 0% vs Flow signals 41% — el posicionamiento estructural y el flujo institucional no coinciden (REGIME 0/43 vs FLOW 17/41).\n- **DIVERGENCIA CROSS-LAYER:** flujo neto SPX +0.04B contra bias BEARISH — el flujo apunta al lado contrario del bias calculado por el stack.\n- Score **42/124** — 🔴 BEARISH BIAS.\n- GEX neto **$-4,5B** (negativo, dealers amplifican); GEX cayendo 3 de 3 días.\n- Spot SPX 7.690,73 vs zero gamma 7.780,05: 1,2% por debajo.\n- Aviso del scorer: Neg GEX + VOMEX +$52.068M — dealers amplifican spot y vol a la vez.\n\n**Qué pasó en la sesión**\n\n- **Barra de mayor confluencia, 10:20:** 5 símbolos (QQQ, SPY, VIX, VIX3M, VIX9D) en 2 temas — Volatilidad e Índices/futuros. Es índices y vol moviéndose juntos en la misma barra, no una rotación entre sectores; la barra previa de 10:15 repite la misma combinación con 4 símbolos.\n- De 57 eventos, 35 son de Índices/futuros con QQQ muy al frente (27) y 12 de Volatilidad: la actividad del día se concentró en ese par de temas, entre las 10:15 y las 15:30.\n- Dos cambios de régimen en la estructura temporal del VIX, a las 11:25 (0,866) y 12:25 (0,902).\n- Nota sobre el Block Detector: los datos no son comparables, compara OI de vencimientos distintos (20/10 → 21/10), es cambio de contrato y no flujo; 10 bloques sin puntuar.\n\n**Niveles para el overnight**\n\n**ES**\nBanderas: ESTRUCTURA RARA — el call wall (7.792,17) está ABAJO del zero gamma (7.822,22). EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, van en lista plana por precio descendente.\n- EM +1σ 7.856,92\n- Zero Gamma / Vol trigger 7.822,22\n- Call wall 7.792,17\n- Max GEX 7.742,17\n- Put wall 7.712,17\n- EM −1σ 7.608,88\n- (spot estimado 7.732,90)\n\n**NQ**\nBanderas: ESTRUCTURA RARA — el call wall (30.204,77) está ABAJO del zero gamma (30.320,63). EL PIVOTE NO QUEDA EN EL MEDIO: el zero gamma no separa resistencias de soportes, van en lista plana por precio descendente.\n- EM +1σ 30.493,99\n- Zero Gamma / Vol trigger 30.320,63\n- Call wall 30.204,77\n- Max GEX / Put wall 29.377,24\n- EM −1σ 28.952,31\n- (spot estimado 29.723,15)\n\nSon referencias, no objetivos.\n\n**Titulares**\n- Every look from the Victoria's Secret Fashion Show - Reuters\n- Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly\n- Germany summons Iranian envoy over plot to kill Jewish community leader - Reuters\n- Saudi Arabia postpones its 'Davos in the Desert' conference after attacks - Reuters\n- Christiane Amanpour to leave CNN after four decades as Ellison era begins - Reuters\n- Rubio seeks to expand Central Asia ties with pomp-filled Uzbekistan visit - Reuters\n- Explainer: What's behind Egypt's move towards possible military involvement in Saudi-Yemen conflict? - Reuters\n- Israel to resume commercial shipments to Gaza after Hamas fee dispute - Reuters\n\nActividad inusual:\n- SPX: NEUTRAL — impulsado por 0DTE · 0DTE = >99% del volumen de las señales · muy pocas señales fuera del 0DTE para una lectura sin 0DTE\n- QQQ: BEARISH — impulsado por 0DTE · 0DTE = 90% del volumen de las señales · muy pocas señales fuera del 0DTE para una lectura sin 0DTE\n- SPY: BEARISH sin 0DTE · con 0DTE NEUTRAL · 0DTE = 86% del volumen de las señales\n\nOtras métricas: DEX $-12B (dealers cortos de delta) · VEX +$7M · CHEX $-29M · delta imbalance +109.924 · skew 25Δ 4,2 pts · ATM IV 14,8% · VRP +4,3 pts · flujo neto SPX +$35M · basis ES 42,17 y NQ 41,38 (RTH 15:55)."
  },
  "stale_flags": {
   "flow_stale": false,
