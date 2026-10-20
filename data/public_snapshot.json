@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20T07:48:20-04:00",
+ "generated_at": "2026-10-20T08:33:57-04:00",
  "sesion": "2026-10-20",
  "slot": "0830",
  "frescura": {
-  "artefacto_mas_viejo_min": 1.0,
+  "artefacto_mas_viejo_min": 0.9,
   "dentro_de_ventana": true
  },
  "veredicto": {
@@ -25,7 +25,7 @@
    "signo": "negativo"
   },
   "spot_spx": 7690.72998046875,
-  "zero_gamma": 7713.59407017564,
+  "zero_gamma": 7713.6026644258145,
   "distancia_pct": -0.3,
   "vix": {
    "regimen": "tensión",
@@ -39,11 +39,11 @@
   "futuros": {
    "ES": {
     "spot_estimado": 7733.11,
-    "pivote_zero_gamma": 7755.97,
+    "pivote_zero_gamma": 7755.98,
     "em_1sigma": "96.08",
     "iv": "11.45",
     "expiry": "2026-10-22",
-    "ts": "2026-10-20 07:47",
+    "ts": "2026-10-20 08:33",
     "formato": "tres_bloques",
     "resistencias": [
      "EM +1σ 7,829.19",
@@ -71,18 +71,18 @@
    },
    "NQ": {
     "spot_estimado": 29723.37,
-    "pivote_zero_gamma": 29291.39,
-    "em_1sigma": "575.55",
-    "iv": "17.75",
+    "pivote_zero_gamma": 29352.63,
+    "em_1sigma": "537.90",
+    "iv": "16.59",
     "expiry": "2026-10-22",
-    "ts": "2026-10-20 07:47",
+    "ts": "2026-10-20 08:33",
     "formato": "tres_bloques",
     "resistencias": [
-     "EM +1σ 30,298.92",
+     "EM +1σ 30,261.26",
      "Call wall 30,204.99"
     ],
     "soportes": [
-     "EM −1σ 29,147.82",
+     "EM −1σ 29,185.47",
      "Max GEX / Put wall 28,756.81"
     ],
     "banderas": null,
@@ -104,7 +104,7 @@
   "tickers": {
    "SPX": {
     "spot": 7690.72998046875,
-    "zero_gamma": 7713.59407017564,
+    "zero_gamma": 7713.6026644258145,
     "call_wall": 7750.0,
     "put_wall": 7525.0,
     "expected_move_1sigma": 96.08009134829551,
@@ -115,30 +115,30 @@
    },
    "SPY": {
     "spot": 766.47998046875,
-    "zero_gamma": 748.3890468491742,
+    "zero_gamma": 751.1641674650534,
     "call_wall": 774.0,
     "put_wall": 766.0,
-    "expected_move_1sigma": 11.783441937131775,
-    "em_superior": 778.2634224058818,
-    "em_inferior": 754.6965385316182,
+    "expected_move_1sigma": 10.135934441308525,
+    "em_superior": 776.6159149100586,
+    "em_inferior": 756.3440460274414,
     "expiry": "2026-10-22",
     "sin_dato": false
    },
    "QQQ": {
     "spot": 718.3599853515625,
-    "zero_gamma": 707.9150210496254,
+    "zero_gamma": 709.3997679253648,
     "call_wall": 730.0,
     "put_wall": 695.0,
-    "expected_move_1sigma": 13.91236128846215,
-    "em_superior": 732.2723466400247,
-    "em_inferior": 704.4476240631003,
+    "expected_move_1sigma": 13.003159085948568,
+    "em_superior": 731.3631444375111,
+    "em_inferior": 705.3568262656139,
     "expiry": "2026-10-22",
     "sin_dato": false
    }
   }
  },
  "briefs": {
-  "AM": "**Cobertura**\nWatcher desde el brief PM del 2026-10-19 16:08 hasta 07:47 de hoy: dos corridas (hasta 19-10 16:16 y desde hoy 07:28), 1 reinicio y un hueco acotado de 15,2 h entre ambas; último latido hace 4 minutos. Sin calendario macro.\n\n**Qué pasó desde el brief anterior**\nNo hay barra de confluencia para leer: el watcher no registró ningún evento en la ventana cubierta. El hueco de 15,2 h entre corridas no se midió.\n\n- Sin eventos registrados, no hay composición de símbolos ni temas para leer hoy.\n- Las sesiones previas muestran el net GEX en terreno negativo desde el 15-10 y el score bajando hasta 42 el 19-10; hoy marca 58.\n- La ATM IV viene de 14,8% el 19-10 a 11,5% hoy.\n\n**Régimen hoy**\nVETO 1: Spot 7,691 within 0.30% of Zero Gamma 7,714 — regime unstable\n\n- Score 58/124 — ❌ NO TRADE, bias NEUTRAL.\n- GEX: $-1,2B — dealers amplify.\n- spot SPX 7.690,73 vs zero gamma 7.713,59 — 0,3% por debajo.\n- Basis ES 42,38 (cierre RTH 19-10 16:00).\n\n**Niveles del día**\n\n**ES**\nResistencias:\n- EM +1σ 7.829,19\n- Call wall 7.792,38\n- Max GEX 7.767,38\n\nPivote zero gamma: 7.755,97 (spot estimado 7.733,11)\n\nSoportes:\n- EM −1σ 7.637,03\n- Put wall 7.567,38\n\n**NQ**\nResistencias:\n- EM +1σ 30.298,92\n- Call wall 30.204,99\n\nPivote zero gamma: 29.291,39 (spot estimado 29.723,37)\n\nSoportes:\n- EM −1σ 29.147,82\n- Max GEX / Put wall 28.756,81\n\nSon referencias, no objetivos.\n\n**Macro**\n- Iran prolongs talks in stalemate to influence US midterms, officials say - Reuters\n- Most Gulf bourses retreat after Houthis claim attacks on Saudi energy, airport sites - Reuters\n- Oil majors face spending test from Iran war windfall cash - Reuters\n- As France erupts, Europe's far right gains from fuel-price anger ahead of elections - Reuters\n- How safe havens stack up as tech, energy and France fears grip markets - Reuters\n- Brent hits five-month high as attacks on ships, Saudi sites fuel supply worries - Reuters\n- Hegseth discusses Iran with Netanyahu in unannounced visit to Israel, officials say - Reuters\n- Kremlin says Putin, Trump and Xi could hold a three-way meeting in China next month - Reuters\n\nActividad inusual:\n- SPX: NEUTRAL — datos de la sesión del 2026-10-19, no de hoy\n- QQQ: BEARISH — datos de la sesión del 2026-10-19, no de hoy\n- SPY: BEARISH — datos de la sesión del 2026-10-19, no de hoy\n\nOtras métricas: DEX $-15B (dealers short delta) · VEX +$54M · CHEX $-37M · delta imbalance +669.329 · skew 25Δ -3,0 pts.",
+  "AM": "**Cobertura**\nWatcher cubierto de 07:47 a 08:33 en una sola corrida (arranque 07:28, último latido 08:31, hace 2,5 minutos), sin reinicios ni huecos; sin calendario macro.\n\n**Qué pasó desde el brief anterior**\nEl watcher no registró ningún evento en la ventana: no hay barra de confluencia para leer hoy.\n\n**Régimen hoy**\nVETO 1: Spot 7,691 within 0.30% of Zero Gamma 7,714 — regime unstable\n\n- Score 58/124 — ❌ NO TRADE, bias NEUTRAL.\n- GEX SPX −$1,2B (negativo, dealers amplifican); GEX subiendo 3 de 3 días.\n- spot SPX 7.690,73 contra zero gamma 7.713,60 — 0,3% por debajo.\n- Basis ES 42,38 (cierre RTH 19-10 16:00).\n- Otros avisos del scorer: sólo 1 de 3 (SPX/QQQ/SPY) confirmando régimen; Block Detector no comparable — compara OI de vencimientos distintos (2026-10-21 → 2026-10-22), es cambio de contrato, no flujo; ATM IV 11,5%, VRP +2,4pts.\n\n**Niveles del día**\n\n**ES**\nspot estimado 7.733,11 · IV 11,45% · exp 2026-10-22\n- EM +1σ 7.829,19\n- Call wall 7.792,38\n- Max GEX 7.767,38\n- Pivote zero gamma 7.755,98\n- EM −1σ 7.637,03\n- Put wall 7.567,38\n\n**NQ**\nspot estimado 29.723,37 · IV 16,59% · exp 2026-10-22\n- EM +1σ 30.261,26\n- Call wall 30.204,99\n- Pivote zero gamma 29.352,63\n- EM −1σ 29.185,47\n- Max GEX / Put wall 28.756,81\n\nSon referencias, no objetivos.\n\n**Macro**\n- Draymond Green says he's 'not Steph Curry,' wants to play another year even if he leaves Golden State Warriors\n- GE Aerospace raises profit forecast as engine maintenance demand defies fuel shock - Reuters\n- Iran prolongs talks in stalemate to influence US midterms, officials say - Reuters\n- Israeli fire kills four people in Gaza, medics say - Reuters\n- UK to fly RAF missions defending Saudi Arabia against Houthi attacks, Bloomberg reports - Reuters\n- Most Gulf bourses retreat after Houthis claim attacks on Saudi energy, airport sites - Reuters\n- Oil majors face spending test from Iran war windfall cash - Reuters\n- As France erupts, Europe's far right gains from fuel-price anger ahead of elections - Reuters\n\nActividad inusual:\n- SPX: NEUTRAL — datos de la sesión del 2026-10-19, no de hoy\n- QQQ: BEARISH — datos de la sesión del 2026-10-19, no de hoy\n- SPY: BEARISH — datos de la sesión del 2026-10-19, no de hoy\n\nOtras métricas: DEX −$15B (dealers cortos de delta) · VEX +$54M · CHEX −$37M · delta imbalance +669.329 · skew 25Δ −3,0pts.",
   "PM": null
  },
  "stale_flags": {
