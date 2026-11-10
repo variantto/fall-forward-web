@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10T15:34:45-05:00",
+ "generated_at": "2026-11-10T16:09:41-05:00",
  "sesion": "2026-11-09",
- "slot": "1530",
+ "slot": "1605",
  "frescura": {
-  "artefacto_mas_viejo_min": 1406.6,
+  "artefacto_mas_viejo_min": 1441.5,
   "dentro_de_ventana": false
  },
  "veredicto": {
@@ -116,13 +116,13 @@
     "sin_dato": false
    },
    "SPY": {
-    "spot": 749.22998046875,
-    "zero_gamma": 746.4979578756537,
+    "spot": 750.010009765625,
+    "zero_gamma": 745.8913155683978,
     "call_wall": 760.0,
-    "put_wall": 735.0,
-    "expected_move_1sigma": 14.093302242120105,
-    "em_superior": 763.3232827108701,
-    "em_inferior": 735.1366782266299,
+    "put_wall": 750.0,
+    "expected_move_1sigma": 12.283103429119151,
+    "em_superior": 762.2931131947441,
+    "em_inferior": 737.7269063365059,
     "expiry": "2026-11-12",
     "sin_dato": false
    },
