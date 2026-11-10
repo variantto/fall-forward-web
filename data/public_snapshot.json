@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09T16:08:57-05:00",
+ "generated_at": "2026-11-10T08:34:54-05:00",
  "sesion": "2026-11-09",
- "slot": "1605",
+ "slot": "0830",
  "frescura": {
-  "artefacto_mas_viejo_min": 0.8,
-  "dentro_de_ventana": true
+  "artefacto_mas_viejo_min": 986.8,
+  "dentro_de_ventana": false
  },
  "veredicto": {
   "score": 31,
@@ -62,11 +62,11 @@
      "contrato": "ESZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
-     "estado": "hoy",
+     "estado": "vieja",
      "fuente": "aligned_rth",
      "measured_at": "2026-11-09T15:55:00-05:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
-     "desactualizado": null,
+     "procedencia": "RTH 09-11 15:55",
+     "desactualizado": "basis ES de RTH 09-11 15:55, no medido en esta corrida — los niveles ES convertidos arrastran la deriva desde entonces",
      "no_medido": null
     },
     "origen_sin_dato": false
@@ -93,11 +93,11 @@
      "contrato": "NQZ6",
      "fuera_de_rango": null,
      "rth_warning": false,
-     "estado": "hoy",
+     "estado": "vieja",
      "fuente": "aligned_rth",
      "measured_at": "2026-11-09T15:55:00-05:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
-     "desactualizado": null,
+     "procedencia": "RTH 09-11 15:55",
+     "desactualizado": "ratio NQ de RTH 09-11 15:55, no medido en esta corrida — los niveles NQ convertidos arrastran la deriva desde entonces",
      "no_medido": null
     },
     "origen_sin_dato": false
@@ -116,14 +116,14 @@
     "sin_dato": false
    },
    "SPY": {
-    "spot": 752.6400146484375,
-    "zero_gamma": 752.8362257283752,
-    "call_wall": 756.0,
-    "put_wall": 720.0,
-    "expected_move_1sigma": 15.241427094429708,
-    "em_superior": 767.8814417428672,
-    "em_inferior": 737.3985875540078,
-    "expiry": "2026-11-11",
+    "spot": 752.6900024414062,
+    "zero_gamma": 746.0023723560819,
+    "call_wall": 760.0,
+    "put_wall": 750.0,
+    "expected_move_1sigma": 11.382554406379992,
+    "em_superior": 764.0725568477862,
+    "em_inferior": 741.3074480350263,
+    "expiry": "2026-11-12",
     "sin_dato": false
    },
    "QQQ": {
@@ -151,6 +151,6 @@
   "cadena_vacia": false,
   "basis_fuera_de_rango": false,
   "basis_fuera_de_rth": false,
-  "expiraciones_no_adyacentes": false
+  "expiraciones_no_adyacentes": true
  }
 }
