@@ -1,14 +1,14 @@
 {
  "schema": 1,
- "generated_at": "2026-11-24T16:06:38-05:00",
+ "generated_at": "2026-11-24T19:07:08-05:00",
  "sesion": "2026-11-24",
- "slot": "1605",
+ "slot": "0935",
  "frescura": {
   "artefacto_mas_viejo_min": 0.7,
   "dentro_de_ventana": true
  },
  "veredicto": {
-  "score": 23,
+  "score": 22,
   "max": 124,
   "label": null,
   "estado_veto": [
@@ -24,8 +24,8 @@
    "signo": "negativo"
   },
   "spot_spx": 7201.08984375,
-  "zero_gamma": 7361.14250204811,
-  "distancia_pct": -2.22,
+  "zero_gamma": 7360.27793693391,
+  "distancia_pct": -2.21,
   "vix": {
    "regimen": "backwardation",
    "desde": "tensión",
@@ -38,18 +38,18 @@
   "futuros": {
    "ES": {
     "spot_estimado": 7216.42,
-    "pivote_zero_gamma": 7376.47,
-    "em_1sigma": "176.94",
-    "iv": "22.52",
+    "pivote_zero_gamma": 7375.61,
+    "em_1sigma": "181.89",
+    "iv": "23.15",
     "expiry": "2026-11-27",
-    "ts": "2026-11-24 16:05",
+    "ts": "2026-11-24 19:06",
     "formato": "tres_bloques",
     "resistencias": [
      "Call wall / Max GEX 7,415.33",
-     "EM +1σ 7,393.36"
+     "EM +1σ 7,398.31"
     ],
     "soportes": [
-     "EM −1σ 7,039.48",
+     "EM −1σ 7,034.53",
      "Put wall 7,015.33"
     ],
     "banderas": null,
@@ -60,8 +60,8 @@
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-11-24T15:55:00-05:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-11-24T16:00:00-05:00",
+     "procedencia": "medido en la sesión (RTH 16:00)",
      "desactualizado": null,
      "no_medido": null
     },
@@ -69,18 +69,18 @@
    },
    "NQ": {
     "spot_estimado": 26284.04,
-    "pivote_zero_gamma": 26448.39,
-    "em_1sigma": "1025.66",
-    "iv": "35.76",
+    "pivote_zero_gamma": 26442.21,
+    "em_1sigma": "1053.26",
+    "iv": "36.73",
     "expiry": "2026-11-27",
-    "ts": "2026-11-24 16:05",
+    "ts": "2026-11-24 19:06",
     "formato": "tres_bloques",
     "resistencias": [
      "Call wall / Max GEX 27,392.08",
-     "EM +1σ 27,309.70"
+     "EM +1σ 27,337.30"
     ],
     "soportes": [
-     "EM −1σ 25,258.38",
+     "EM −1σ 25,230.78",
      "Put wall 24,920.62"
     ],
     "banderas": null,
@@ -91,8 +91,8 @@
      "rth_warning": false,
      "estado": "hoy",
      "fuente": "aligned_rth",
-     "measured_at": "2026-11-24T15:55:00-05:00",
-     "procedencia": "medido en la sesión (RTH 15:55)",
+     "measured_at": "2026-11-24T16:00:00-05:00",
+     "procedencia": "medido en la sesión (RTH 16:00)",
      "desactualizado": null,
      "no_medido": null
     },
@@ -102,34 +102,34 @@
   "tickers": {
    "SPX": {
     "spot": 7201.08984375,
-    "zero_gamma": 7361.14250204811,
+    "zero_gamma": 7360.27793693391,
     "call_wall": 7400.0,
     "put_wall": 7000.0,
-    "expected_move_1sigma": 176.94038688739295,
-    "em_superior": 7378.030230637393,
-    "em_inferior": 7024.149456862607,
+    "expected_move_1sigma": 181.89031778166725,
+    "em_superior": 7382.980161531667,
+    "em_inferior": 7019.199525968333,
     "expiry": "2026-11-27",
     "sin_dato": false
    },
    "SPY": {
-    "spot": 718.5800170898438,
-    "zero_gamma": 724.975682754149,
+    "spot": 718.780029296875,
+    "zero_gamma": 725.2522002516715,
     "call_wall": 730.0,
     "put_wall": 680.0,
-    "expected_move_1sigma": 16.856754144222073,
-    "em_superior": 735.4367712340659,
-    "em_inferior": 701.7232629456216,
+    "expected_move_1sigma": 16.116405472919435,
+    "em_superior": 734.8964347697944,
+    "em_inferior": 702.6636238239556,
     "expiry": "2026-11-27",
     "sin_dato": false
    },
    "QQQ": {
     "spot": 638.0999755859375,
-    "zero_gamma": 642.0906009865643,
+    "zero_gamma": 641.9413032193142,
     "call_wall": 665.0,
     "put_wall": 605.0,
-    "expected_move_1sigma": 24.89697568124187,
-    "em_superior": 662.9969512671794,
-    "em_inferior": 613.2029999046956,
+    "expected_move_1sigma": 25.57231310883708,
+    "em_superior": 663.6722886947746,
+    "em_inferior": 612.5276624771004,
     "expiry": "2026-11-27",
     "sin_dato": false
    }
